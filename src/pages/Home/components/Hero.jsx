@@ -23,7 +23,7 @@ const Hero = () => {
                 <span className="font-bold">Theme</span>: Building the Next Big
                 Thing with Islamic Finance
               </h3>
-              <ul className="hidden md:block list-disc flex-row justify-start gap-2 md:gap-8 font-body text-white italic mt-4 text-sm md:text-base px-6 md:px-5">
+              <ul className="list-disc flex flex-row justify-start gap-2 md:gap-8 font-body text-white italic mt-4 text-sm md:text-base px-6 md:px-5">
                 {[
                   "Learn practical halal fintech models",
                   "Network with mentors",
