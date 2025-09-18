@@ -18,13 +18,13 @@ const WhyAttend = () => {
         </p>
       </div>
       <div className="px-0 md:px-5 lg:px-30 grid grid-cols-1 gap-8 md:grid-cols-2 mt-8 md:mt-12">
-        <div className="rounded-xl shadow flex flex-col gap-8 justify-between shadow-blue-200 px-8 py-6 bg-royal-blue/20">
+        <div className="relative rounded-xl shadow flex flex-col gap-8 justify-between shadow-blue-200 px-8 py-6 bg-royal-blue/20 overflow-hidden">
           <h3 className="font-heading text-2xl md:text-4xl font-medium text-prussian-blue">
-            Speakers
+            Cutting edge insights
           </h3>
-          <div className="flex flex-row gap-6 md:gap-8">
-            <div className=" bg-prussian-blue rounded-full w-12 lg:w-16 h-12 lg:h-16 flex justify-center items-center text-white text-2xl lg:text-3xl aspect-square"></div>
-            <p className="text-gray-800 text-lg font-body">
+          <div className="flex flex-row gap-6 md:gap-8 justify-between">
+            <img src="/images/01.png" className="absolute left-3 bottom-0" />
+            <p className="text-gray-800 text-lg font-body ml-65">
               Hear from industry leaders in Islamic finance with decades of
               combined experience building banks, funding startups, and
               pioneering halal fintech solutions across Africa.
@@ -34,13 +34,45 @@ const WhyAttend = () => {
             <div></div>
           </div>
         </div>
-        <div className="rounded-xl shadow flex flex-col gap-8 justify-between shadow-blue-200 px-8 py-6 bg-royal-blue/20">
+        <div className="relative rounded-xl shadow flex flex-col gap-8 justify-between shadow-blue-200 px-8 py-6 bg-royal-blue/20 overflow-hidden">
           <h3 className="font-heading text-2xl md:text-4xl font-medium text-prussian-blue">
-            Speakers
+            Cutting edge insights
           </h3>
-          <div className="flex flex-row gap-6 md:gap-8">
-            <div className=" bg-prussian-blue rounded-full w-12 lg:w-16 h-12 lg:h-16 flex justify-center items-center text-white text-2xl lg:text-3xl aspect-square"></div>
-            <p className="text-gray-800 text-lg font-body">
+          <div className="flex flex-row gap-6 md:gap-8 justify-between">
+            <img src="/images/02.png" className="absolute right-3 bottom-0" />
+            <p className="text-gray-800 text-lg font-body mr-65">
+              Hear from industry leaders in Islamic finance with decades of
+              combined experience building banks, funding startups, and
+              pioneering halal fintech solutions across Africa.
+            </p>
+          </div>
+          <div className="flex justify-between mt-8">
+            <div></div>
+          </div>
+        </div>
+        <div className="relative rounded-xl shadow flex flex-col gap-8 justify-between shadow-blue-200 px-8 py-6 bg-royal-blue/20 overflow-hidden">
+          <h3 className="font-heading text-2xl md:text-4xl font-medium text-prussian-blue">
+            Cutting edge insights
+          </h3>
+          <div className="flex flex-row gap-6 md:gap-8 justify-between">
+            <img src="/images/03.png" className="absolute left-3 -bottom-2" />
+            <p className="text-gray-800 text-lg font-body ml-65">
+              Hear from industry leaders in Islamic finance with decades of
+              combined experience building banks, funding startups, and
+              pioneering halal fintech solutions across Africa.
+            </p>
+          </div>
+          <div className="flex justify-between mt-8">
+            <div></div>
+          </div>
+        </div>
+        <div className="relative rounded-xl shadow flex flex-col gap-8 justify-between shadow-blue-200 px-8 py-6 bg-royal-blue/20 overflow-hidden">
+          <h3 className="font-heading text-2xl md:text-4xl font-medium text-prussian-blue">
+            Cutting edge insights
+          </h3>
+          <div className="flex flex-row gap-6 md:gap-8 justify-between">
+            <img src="/images/04.png" className="absolute right-3 bottom-0" />
+            <p className="text-gray-800 text-lg font-body mr-65">
               Hear from industry leaders in Islamic finance with decades of
               combined experience building banks, funding startups, and
               pioneering halal fintech solutions across Africa.
