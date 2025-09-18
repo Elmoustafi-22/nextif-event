@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --radius: 0.5rem;
+
+  /* custom border radius */
+  --radius-lg: var(--radius)
+  --radius-md: (var(--radius) -2px);
+  --radius-sm: (var(--radius) -4px);
+
+  /* Custom colors */
+  --blue-400: #60a5fa;
+  --blue-600: #2563eb;
+  --blue-700: #1d4ed8;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+
+  --font-roboto: "Roboto", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-jost: "Jost", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+  --font-raleway: "Raleway", sans-serif;
+  --font-work-sans: "Work Sans", sans-serif;
+  --font-lato: "Lato", sans-serif;
+  --font-lobster: "Lobster", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-lora: "Lora", sans-serif;
+  --font-pt-sans: "PT Sans", sans-serif;
+  --font-nunito: "Nunito", sans-serif;
+  --font-ubuntu: "Ubuntu", sans-serif;
+  --font-playfair: "Playfair Display", sans-serif;
+  --font-merriweather: "Merriweather", sans-serif;
+  --font-fira-sans: "Fira Sans", sans-serif;
+  --font-source-sans: "Source Sans 3", sans-serif;
+}
