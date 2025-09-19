@@ -4,6 +4,7 @@ import Event from "./components/Event";
 import Agenda from "./components/Agenda";
 import Speakers from "./components/Speakers";
 import WhyAttend from "./components/WhyAttend";
+import Register from "./components/Register";
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <Agenda />
       <Speakers />
       <WhyAttend/>
+      <Register/>
     </div>
   );
 };
