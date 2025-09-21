@@ -12,8 +12,7 @@ const Hero = () => {
           <div className=" flex flex-col gap-8 md:gap-12 lg:gap-20 justify-center  w-full md:w-3/4">
             <div className="flex flex-col gap-5 justify-center">
               <h1 className="text-5xl text-center md:text-left md:text-6xl lg:text-7xl font-heading text-white font-extrabold leading-14 md:leading-16 lg:leading-[75px]">
-                NEXTIF'
-                <span className="text-4xl md:text-5xl lg:text-6xl">s</span>
+                NEXTIF
                 <br />
                 <span className="text-5xl md:text-6xl">
                   Islamic Finance Roundtable

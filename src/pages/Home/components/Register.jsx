@@ -26,7 +26,7 @@ const Register = () => {
         
       </div>
       <div className='flex flex-col justify-center items-center mt-10 md:mt-16 lg:mt-20'>
-        <Link  className='text-xl md:text-2xl font-body font-semibold text-gray-50 px-8 md:px-18 py-2 md:py-4 flex gap-2 items-center whitespace-nowrap rounded-full bg-gradient-to-r from-prussian-blue to-blue-900 hover:from-prussian-blue/90 hover:to-blue-900/90'>Register <PiArrowUpRight/>  </Link>
+        <Link className='text-xl md:text-2xl font-body font-semibold text-gray-50 px-8 md:px-18 py-2 md:py-4 flex gap-2 items-center whitespace-nowrap rounded-full bg-gradient-to-r from-prussian-blue to-blue-900 hover:from-prussian-blue/90 hover:to-blue-900/90'>Register <PiArrowUpRight/>  </Link>
       </div>
     </section>
   );

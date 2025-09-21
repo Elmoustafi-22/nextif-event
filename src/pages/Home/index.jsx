@@ -5,6 +5,7 @@ import Agenda from "./components/Agenda";
 import Speakers from "./components/Speakers";
 import WhyAttend from "./components/WhyAttend";
 import Register from "./components/Register";
+import Contact from "./components/Contact";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <Speakers />
       <WhyAttend/>
       <Register/>
+      <Contact/>
     </div>
   );
 };
