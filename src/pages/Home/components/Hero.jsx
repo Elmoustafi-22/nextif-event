@@ -15,7 +15,7 @@ const Hero = () => {
                 NEXTIF
                 <br />
                 <span className="text-5xl md:text-6xl">
-                  Islamic Finance Roundtable
+                  Islamic Finance and Innovation Roundtable
                 </span>{" "}
               </h1>
               <h3 className="font-heading text-2xl mt-2 md:mt-4 md:text-[26px] lg:text-[31px] text-center md:text-left italic text-white">
