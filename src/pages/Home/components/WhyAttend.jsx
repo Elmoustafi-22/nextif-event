@@ -20,7 +20,7 @@ const WhyAttend = () => {
       <div className="px-0 md:px-8 lg:px-30 grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 mt-6 md:mt-12">
         <div className="relative rounded-xl shadow flex flex-col gap-4 md:gap-8 justify-between shadow-blue-200 px-4 md:px-8 py-4 md:py-6 bg-royal-blue/20 overflow-hidden">
           <h3 className="font-heading text-xl md:text-4xl font-medium text-prussian-blue">
-            Cutting edge insights
+            Expert Speakers
           </h3>
           <div className="flex flex-row gap-4 md:gap-8 justify-between">
             <img
@@ -28,9 +28,9 @@ const WhyAttend = () => {
               className="absolute left-3 bottom-0 max-h-14 md:max-h-20 lg:max-h-full"
             />
             <p className="text-gray-800 text-base md:text-xl font-body ml-30 md:ml-38 lg:ml-65">
-              Hear from industry leaders in Islamic finance with decades of
-              combined experience building banks, funding startups, and
-              pioneering halal fintech solutions across Africa.
+              Trailblazers in Islamic finance, fintech, and impact investing
+              share proven strategies to spark growth and scale ideas. Fresh
+              insights. Real stories. Action you can use.
             </p>
           </div>
           <div className="flex justify-between mt-4 md:mt-8">
@@ -39,7 +39,7 @@ const WhyAttend = () => {
         </div>
         <div className="relative rounded-xl shadow flex flex-col gap-4 md:gap-8 justify-between shadow-blue-200 px-4 md:px-8 py-4 md:py-6 bg-royal-blue/20 overflow-hidden">
           <h3 className="font-heading text-xl md:text-4xl font-medium text-prussian-blue">
-            Innovation showcase
+            Interactive Roundtable
           </h3>
           <div className="flex flex-row gap-4 md:gap-8 justify-between">
             <img
@@ -47,9 +47,8 @@ const WhyAttend = () => {
               className="absolute right-3 bottom-0 max-h-14 md:max-h-20 lg:max-h-full"
             />
             <p className="text-gray-800 text-base md:text-xl font-body mr-30 md:mr-38 lg:mr-65">
-              Hear from industry leaders in Islamic finance with decades of
-              combined experience building banks, funding startups, and
-              pioneering halal fintech solutions across Africa.
+              No speeches. No sidelines. Jump into live debates, shape
+              solutions, and leave with clear, workable actions.
             </p>
           </div>
           <div className="flex justify-between mt-4 md:mt-8">
@@ -58,7 +57,7 @@ const WhyAttend = () => {
         </div>
         <div className="relative rounded-xl shadow flex flex-col gap-4 md:gap-8 justify-between shadow-blue-200 px-4 md:px-8 py-4 md:py-6 bg-royal-blue/20 overflow-hidden">
           <h3 className="font-heading text-xl md:text-4xl font-medium text-prussian-blue">
-            Startup Ideas
+            Networking & Collaboration
           </h3>
           <div className="flex flex-row gap-4 md:gap-8 justify-between">
             <img
@@ -66,9 +65,9 @@ const WhyAttend = () => {
               className="absolute left-3 -bottom-2 max-h-14 md:max-h-20 lg:max-h-full"
             />
             <p className="text-gray-800 text-base md:text-xl font-body ml-30 md:ml-38 lg:ml-65">
-              Hear from industry leaders in Islamic finance with decades of
-              combined experience building banks, funding startups, and
-              pioneering halal fintech solutions across Africa.
+              Meet founders, investors, and policy thinkers who drive ethical
+              finance forward. Forge partnerships. Discover funding. Build a
+              network that lasts.
             </p>
           </div>
           <div className="flex justify-between mt-4 md:mt-8">
@@ -77,7 +76,7 @@ const WhyAttend = () => {
         </div>
         <div className="relative rounded-xl shadow flex flex-col gap-4 md:gap-8 justify-between shadow-blue-200 px-4 md:px-8 py-4 md:py-6 bg-royal-blue/20 overflow-hidden">
           <h3 className="font-heading text-xl md:text-4xl font-medium text-prussian-blue">
-            Exclusive Networking
+            Real-Time Project Development
           </h3>
           <div className="flex flex-row gap-4 md:gap-8 justify-between">
             <img
@@ -85,9 +84,8 @@ const WhyAttend = () => {
               className="absolute right-3 bottom-0 max-h-14 md:max-h-20 lg:max-h-full"
             />
             <p className="text-gray-800 text-base md:text-xl font-body mr-30 md:mr-38 lg:mr-65">
-              Hear from industry leaders in Islamic finance with decades of
-              combined experience building banks, funding startups, and
-              pioneering halal fintech solutions across Africa.
+              Turn concepts into prototypes on the spot. Work with mentors, test
+              your idea, and walk away with a roadmap ready for launch.
             </p>
           </div>
           <div className="flex justify-between mt-4 md:mt-8">
