@@ -4,7 +4,7 @@ import { PiArrowUpRight } from 'react-icons/pi'
 import Countdown from '@/components/Countdown';
 
 const Register = () => {
-    const eventDate = "2025-11-15T09:00:00+01:00";
+    const eventDate = "2025-12-27T09:00:00+01:00";
   return (
     <section className="md:container px-6 mt-10 py-10 bg-royal-blue">
       <div className="flex md:justify-between gap-4 flex-col md:flex-row">
