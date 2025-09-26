@@ -42,8 +42,8 @@ return (
       </h1>
       <p className="text-royal-blue flex flex-col gap-1 font-body">
         <span className="block text-lg md:text-xl">
-          October 12 - 15 | Horizon <br className="hidden md:block" />{" "}
-          Convention center, Abuja
+          December 27, 2025 | Outside Lab <br className="hidden md:block" />{" "}
+          Conference Hall, Magaji Rumfa, Kano
         </span>
       </p>
     </div>
