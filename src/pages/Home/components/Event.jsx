@@ -9,7 +9,7 @@ const Event = () => {
         Event at a glance
       </h1>
       <div className="px-0 md:px-5 lg:px-30 grid grid-cols-1 gap-8 md:grid-cols-2 mt-8 md:mt-12">
-        <div className="rounded-xl shadow flex flex-col gap-8 justify-between shadow-blue-200 px-8 py-6 bg-royal-blue/20">
+        <div className="rounded-xl shadow flex flex-col gap-4 md:gap-8 justify-between shadow-blue-200 px-4 md:px-8 py-3 md:py-6 bg-royal-blue/20">
           <h3 className="font-heading text-2xl md:text-4xl font-medium text-prussian-blue">
             Speakers
           </h3>
@@ -23,7 +23,7 @@ const Event = () => {
               pioneering halal fintech solutions across Africa.
             </p>
           </div>
-          <div className="flex justify-between mt-8">
+          <div className="flex justify-between mt-4 md:mt-8">
             <div></div>
 
             <Link
@@ -36,7 +36,7 @@ const Event = () => {
           </div>
         </div>
         <div className="flex flex-col gap-6">
-          <div className="rounded-xl shadow flex flex-col gap-8 justify-between shadow-blue-200 px-8 py-6 bg-royal-blue/20">
+          <div className="rounded-xl shadow flex flex-col gap-4 md:gap-8 justify-between shadow-blue-200 px-4 md:px-8 py-3 md:py-6 bg-royal-blue/20">
             <h3 className="font-heading text-2xl md:text-4xl font-medium text-prussian-blue">
               Develop Market Strategies
             </h3>
@@ -45,7 +45,7 @@ const Event = () => {
               Islamic finance products
             </p>
           </div>
-          <div className="rounded-xl shadow flex flex-col gap-8 justify-between shadow-blue-200 px-8 py-6 bg-royal-blue/20">
+          <div className="rounded-xl shadow flex flex-col gap-4 md:gap-8 justify-between shadow-blue-200 px-4 md:px-8 py-3 md:py-6 bg-royal-blue/20">
             <h3 className="font-heading text-2xl md:text-4xl font-medium text-prussian-blue">
               Navigate Regulatory Frameworks
             </h3>
