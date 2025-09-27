@@ -12,14 +12,16 @@ const Header = () => {
   ];
 
   return (
-    <header className=" sticky top-0 bg-prussian-blue z-50 py-3">
+    <header className="sticky top-0 bg-prussian-blue z-50 py-3">
       <div className="md:container flex justify-between gap-6 items-center px-6">
         <div>
-          <img
-            src="/images/nextif-logo-lg.png"
-            alt="Brand Logo"
-            className="md:w-[50%] lg:w-[60%] w-[50%]"
-          />
+          <Link to="/home">
+            <img
+              src="/images/nextif-logo-lg.png"
+              alt="Brand Logo"
+              className="md:w-[50%] lg:w-[60%] w-[50%]"
+            />
+          </Link>
         </div>
 
         {/* Hamburger button */}
