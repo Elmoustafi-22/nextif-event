@@ -74,14 +74,7 @@ const Register = () => {
           </a>
         </motion.div>
       </motion.section>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 1 }}
-      >
-        <img src="/images/location.png" />
-      </motion.div>
+      
     </>
   );
 };

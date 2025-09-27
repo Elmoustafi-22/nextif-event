@@ -27,15 +27,7 @@ const WhyAttend = () => {
         <h1 className="text-left text-prussian-blue text-2xl md:text-4xl lg:text-5xl font-heading font-bold tracking-tight">
           Why Attend?
         </h1>
-        <p className="text-royal-blue flex flex-col gap-1 font-body">
-          <span className="block text-base md:text-xl">
-            An exclusive gathering of selected
-            <br className="hidden md:block" /> Islamic finance enthusiast,
-            <br className="hidden md:block" /> tech innovators, ethical
-            startups, <br className="hidden md:block" /> Halal entrepreneurs,
-            and students.
-          </span>
-        </p>
+        
       </div>
       <motion.div
         variants={containerVariants}

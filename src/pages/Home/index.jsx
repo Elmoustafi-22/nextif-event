@@ -6,16 +6,20 @@ import Speakers from "./components/Speakers";
 import WhyAttend from "./components/WhyAttend";
 import Register from "./components/Register";
 import Contact from "./components/Contact";
+import Venue from "./components/Venue";
+import Partners from "./components/Partners";
 
 const HomePage = () => {
   return (
     <div>
       <Hero />
       <Event />
-      <Agenda />
       <Speakers />
+      <Agenda />
       <WhyAttend/>
       <Register/>
+      <Partners />
+      <Venue />
       <Contact/>
     </div>
   );

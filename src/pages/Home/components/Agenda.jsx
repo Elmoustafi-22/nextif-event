@@ -60,12 +60,7 @@ const Agenda = () => {
         <h1 className="text-left text-prussian-blue text-3xl md:text-4xl lg:text-5xl font-heading font-bold tracking-tight">
           Discussions
         </h1>
-        <p className="text-royal-blue flex flex-col gap-1 font-body">
-          <span className="block text-lg md:text-xl">
-            December 27, 2025 | Outside Lab{" "}
-            <br className="hidden md:block" /> Conference Hall, Magaji Rumfa, Kano
-          </span>
-        </p>
+        
       </div>
       <div className="px-0 md:px-5 lg:px-30 grid grid-cols-1 md:gap-8 mt-8 md:mt-12">
         <motion.div
