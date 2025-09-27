@@ -12,9 +12,9 @@ const Register = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.5 }}
-        className="md:container px-6 mt-10 py-10 bg-prussian-blue"
+        className="md:container px-6 mt-8 md:mt-10 py-5 md:py-10 bg-prussian-blue"
       >
-        <div className="flex md:justify-between gap-4 flex-col md:flex-row">
+        <div className="flex md:justify-between gap-2 md:gap-4 flex-col md:flex-row">
           <h1 className="text-left text-gray-50 text-3xl md:text-4xl lg:text-5xl font-heading font-bold tracking-tight">
             Register Now
           </h1>
@@ -25,7 +25,7 @@ const Register = () => {
             </span>
           </p>
         </div>
-        <div className="flex flex-col md:flex-row gap-4 md:gap-0 mt-4 md:mt-8">
+        <div className="flex flex-col md:flex-row gap-2 md:gap-0 md:mt-8">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}

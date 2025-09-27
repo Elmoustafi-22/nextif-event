@@ -47,7 +47,7 @@ const Speakers = () => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.5 }}
-      className="mt-10 py-10 bg-cover bg-center relative"
+      className="mt-10 py-5 md:py-10 bg-cover bg-center relative"
       style={{ backgroundImage: `url(/images/speakers-bg.png)` }}
     >
       <div className="absolute inset-0 bg-black/30 z-0"></div>
@@ -68,7 +68,7 @@ const Speakers = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="px-0 md:px-5 lg:px-30 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 md:mt-12"
+          className="px-0 md:px-5 lg:px-30 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 md:mt-12"
         >
           {speakers.map((speaker, index) => (
             <motion.div

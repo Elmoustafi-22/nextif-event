@@ -23,7 +23,7 @@ const Event = () => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 0.5 }}
-      className="bg-white py-10 md:container px-6"
+      className="bg-white py-5 md:py-10 md:container px-6"
     >
       <h1 className="text-left text-prussian-blue text-3xl md:text-4xl lg:text-5xl font-heading font-bold tracking-tight">
         Event at a glance
@@ -33,7 +33,7 @@ const Event = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-        className="px-0 md:px-5 lg:px-30 grid grid-cols-1 gap-8 md:grid-cols-2 mt-8 md:mt-12"
+        className="px-0 md:px-5 lg:px-30 grid grid-cols-1 gap-8 md:grid-cols-2 mt-6 md:mt-12"
       >
         <motion.div
           variants={itemVariants}

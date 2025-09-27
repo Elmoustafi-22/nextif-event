@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Contact from '@/components/Contact';
 
 const PartnersPage = () => {
   const partners = [
@@ -40,6 +41,7 @@ const PartnersPage = () => {
   };
 
   return (
+    <>
     <div className="bg-gray-50 font-body text-gray-800">
       {/* Hero Section */}
       <motion.section
@@ -112,6 +114,8 @@ const PartnersPage = () => {
         </div>
       </motion.section>
     </div>
+    <Contact/>
+    </>
   );
 };
 

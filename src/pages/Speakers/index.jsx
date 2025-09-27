@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Contact from "@/components/Contact";
 
 const SpeakersPage = () => {
   const speakers = [
@@ -75,6 +76,7 @@ const SpeakersPage = () => {
   };
 
   return (
+    <>
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -145,6 +147,8 @@ const SpeakersPage = () => {
         </motion.div>
       </div>
     </motion.section>
+    <Contact/>
+    </>
   );
 };
 

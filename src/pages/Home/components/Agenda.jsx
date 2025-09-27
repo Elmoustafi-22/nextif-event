@@ -54,7 +54,7 @@ const Agenda = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.5 }}
-      className="md:container px-6 mt-10"
+      className="md:container px-6 mt-6 md:mt-10"
     >
       <div className="flex md:justify-between gap-4 flex-col md:flex-row">
         <h1 className="text-left text-prussian-blue text-3xl md:text-4xl lg:text-5xl font-heading font-bold tracking-tight">
@@ -62,7 +62,7 @@ const Agenda = () => {
         </h1>
         
       </div>
-      <div className="px-0 md:px-5 lg:px-30 grid grid-cols-1 md:gap-8 mt-8 md:mt-12">
+      <div className="px-0 md:px-5 lg:px-30 grid grid-cols-1 md:gap-8 mt-6 md:mt-12">
         <motion.div
           variants={containerVariants}
           initial="hidden"
