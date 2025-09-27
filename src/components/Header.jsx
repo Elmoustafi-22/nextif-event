@@ -6,7 +6,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navlinks = [
-    { name: "Home", path: "/home" },
+    { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Speakers", path: "/speakers" },
     { name: "Our Partners", path: "/partners" },
@@ -40,7 +40,7 @@ const Header = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <Link to="/home">
+          <Link to="/">
             <img
               src="/images/nextif-logo-lg.png"
               alt="Brand Logo"
