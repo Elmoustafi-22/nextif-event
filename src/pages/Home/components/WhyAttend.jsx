@@ -47,8 +47,8 @@ const WhyAttend = () => {
               className="absolute right-3 bottom-0 max-h-14 md:max-h-20 lg:max-h-full"
             />
             <p className="text-gray-800 text-base md:text-xl font-body mr-30 md:mr-38 lg:mr-65">
-              No speeches. No sidelines. Jump into live debates, shape
-              solutions, and leave with clear, workable actions.
+              No speeches. No sidelines. Jump into interactive discussion, shape
+              solutions, and leave with clear, workable actions.
             </p>
           </div>
           <div className="flex justify-between mt-4 md:mt-8">

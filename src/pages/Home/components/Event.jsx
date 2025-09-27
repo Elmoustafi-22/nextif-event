@@ -14,7 +14,7 @@ const Event = () => {
             Speakers
           </h3>
           <div className="flex flex-row gap-6 md:gap-8">
-            <div className=" bg-prussian-blue rounded-full w-12 lg:w-16 h-12 lg:h-16 flex justify-center items-center text-white text-2xl lg:text-3xl aspect-square">
+            <div className=" bg-prussian-blue rounded-full w-10 md:w-14 lg:w-16 h-10 md:h-14 lg:h-16 flex justify-center items-center text-white text-xl md:text-2xl lg:text-3xl aspect-square">
               <PiMicrophoneStage />
             </div>
             <p className="text-gray-800 text-lg font-body">

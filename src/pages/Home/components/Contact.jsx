@@ -23,6 +23,9 @@ const Contact = () => {
 
   return (
     <footer className="bg-black py-10 md:py-20">
+      <div className="md:container mx-auto px-6 mb-8">
+        <img src='/images/location.png' className='rounded-4xl'/>
+      </div>
       <div className="md:container mx-auto px-6">
         <div className="flex flex-col md:flex-row rounded-3xl overflow-hidden">
           <div className="w-full md:w-3/5 bg-gray-100 p-8 md:p-12 lg:p-16">
@@ -46,7 +49,6 @@ const Contact = () => {
                     Register
                   </Link>
                 </li>
-                
               </ul>
               <ul className="space-y-4 font-body text-royal-blue">
                 <li>
@@ -73,7 +75,8 @@ const Contact = () => {
           <div className="w-full md:w-2/5 bg-royal-blue p-8 md:p-12 lg:p-16 text-white rounded-3xl md:-ml-8 md:mt-0 -mt-6">
             <h3 className="text-xl font-bold font-heading">GET IN TOUCH</h3>
             <p className="mt-2 font-body text-sm">
-              Reach out with inquiries about tickets, partnerships, or event details.
+              Reach out with inquiries about tickets, partnerships, or event
+              details.
             </p>
             <form onSubmit={handleSubmit} className="mt-6 space-y-4">
               <div className="border-b border-white py-2">
