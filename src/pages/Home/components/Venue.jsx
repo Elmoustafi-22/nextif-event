@@ -9,7 +9,7 @@ const Venue = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
-      className="md:container px-6 py-5 md:py-10 my-10 bg-gray-50"
+      className="md:container px-6 py-5 md:py-10 mt-10 bg-prussian-blue/10"
     >
       <div className="">
         <div className="flex md:justify-between gap-2 md:gap-4 flex-col md:flex-row">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn, staggerContainer } from '../../../utils/animations';
+import { FiPhone, FiMail } from 'react-icons/fi';
 
 const Partners = () => {
   const partners = [
@@ -18,41 +19,113 @@ const Partners = () => {
     },
   ];
 
-return (
-  <motion.section
-    variants={staggerContainer()}
-    initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true, amount: 0.2 }}
-    className="py-5 md:py-10 bg-white"
-  >
-    <div className="md:container mx-auto px-6 text-center">
-      <h1 className="text-left text-prussian-blue text-3xl md:text-4xl lg:text-5xl font-heading font-bold tracking-tight">
-        Our Partners
-      </h1>
-      <motion.div
-        variants={staggerContainer(0.3, 0.2)}
-        className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center"
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        when: "beforeChildren",
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
+  return (
+    <>
+      <motion.section
+        variants={staggerContainer()}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        className="py-5 md:py-10 bg-white"
       >
-        {partners.map((partner, index) => (
+        <div className="md:container mx-auto px-6 text-center">
+          <h1 className="text-left text-prussian-blue text-3xl md:text-4xl lg:text-5xl font-heading font-bold tracking-tight">
+            Our Partners
+          </h1>
           <motion.div
-            key={index}
-            variants={fadeIn("up")}
-            className="flex justify-center"
+            variants={staggerContainer(0.3, 0.2)}
+            className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mt-10"
           >
-            <div className="p-6 shadow-lg rounded-lg bg-white hover:shadow-xl transition-shadow duration-300">
-              <img
-                src={partner.logo}
-                alt={partner.name}
-                className="h-20 object-contain"
-              />
+            {partners.map((partner, index) => (
+              <motion.div
+                key={index}
+                variants={fadeIn("up")}
+                className="flex justify-center"
+              >
+                <div className="p-6 shadow-lg rounded-lg bg-white hover:shadow-xl transition-shadow duration-300">
+                  <img
+                    src={partner.logo}
+                    alt={partner.name}
+                    className="h-20 object-contain"
+                  />
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </motion.section>
+      <motion.section
+        id="sponsorship"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        className="py-5 md:py-10 bg-white"
+      >
+        <div className="md:container mx-auto px-6 text-center">
+          <motion.h1
+            variants={itemVariants}
+            className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-prussian-blue mb-2 md:mb-4"
+          >
+            Partner with Us
+          </motion.h1>
+          <motion.p
+            variants={itemVariants}
+            className="text-lg md:text-xl font-body text-gray-800 max-w-3xl mx-auto mb-10"
+          >
+            Join us as a partner or sponsor to connect with a vibrant community of innovators, entrepreneurs, and investors in the Islamic finance ecosystem. Showcase your brand and support the next generation of ethical finance.
+          </motion.p>
+
+          <motion.div
+            variants={itemVariants}
+            className="flex flex-col md:flex-row justify-center items-center gap-8"
+          >
+            <a
+              href="mailto:nextif.connect@gmail.com"
+              className="bg-royal-blue text-white font-bold px-8 py-4 rounded-full text-lg hover:bg-prussian-blue transition-colors flex items-center gap-3"
+            >
+              <FiMail />
+              Email Us
+            </a>
+            <div className="flex flex-col gap-4 text-left">
+              <a href="tel:+2348035462396" className="flex items-center gap-3 text-prussian-blue hover:text-royal-blue">
+                <FiPhone />
+                <span>Founder: +234 803 546 2396</span>
+              </a>
+              <a href="tel:+2348144232758" className="flex items-center gap-3 text-prussian-blue hover:text-royal-blue">
+                <FiPhone />
+                <span>Co-Founder: +234 814 423 2758</span>
+              </a>
             </div>
           </motion.div>
-        ))}
-      </motion.div>
-    </div>
-  </motion.section>
-);
+        </div>
+      </motion.section>
+    </>
+  );
 };
 
 export default Partners;
