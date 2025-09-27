@@ -19,19 +19,24 @@ const Register = () => {
             </span>
           </p>
         </div>
-        <div className="px-0 md:px-5 lg:px-30 grid grid-cols-1 gap-8 mt-8 md:mt-12">
-          <div className="bg-royal-blue relative pl-8 md:pl-30 lg:pl-40 py-6 flex flex-col">
-            <img
-              src="/images/register-vector.png"
-              alt="register vector"
-              className="absolute bottom-0 right-0 max-h-30 md:max-h-40 lg:max-h-50 z-0"
-            />
-            <div className="relative z-10">
-              <h6 className="text-xl font-body text-gray-50 font-semibold">
-                Countdown:
-              </h6>
-              <Countdown targetDate={eventDate} className="text-white" />
+        <div className="flex flex-col md:flex-row gap-4 md:gap-0 mt-4 md:mt-8">
+          <div className="px-0 md:px-5 lg:px-30 grid grid-cols-1 gap-8 mt-8 md:mt-12 md:w-3/4 w-full">
+            <div className="bg-royal-blue relative pl-8 md:pl-20 lg:pl-30 py-6 flex flex-col items-start">
+              <img
+                src="/images/register-vector.png"
+                alt="register vector"
+                className="absolute bottom-0 right-0 max-h-30 md:max-h-40 lg:max-h-50 z-0"
+              />
+              <div className="relative z-10">
+                <h6 className="text-xl font-body text-gray-50 font-semibold">
+                  Countdown:
+                </h6>
+                <Countdown targetDate={eventDate} className="text-white" />
+              </div>
             </div>
+          </div>
+          <div className="md:w-1/4 w-[80%] mx-auto mt-8 md:mt-4">
+            <img src="/images/hero-event.jpg" />
           </div>
         </div>
         <div className="flex flex-col justify-center items-center mt-10 md:mt-16 lg:mt-20">
@@ -46,7 +51,7 @@ const Register = () => {
         </div>
       </section>
       <div className="">
-        <img src="/images/location.png" className="rounded-4xl" />
+        <img src="/images/location.png" />
       </div>
     </>
   );

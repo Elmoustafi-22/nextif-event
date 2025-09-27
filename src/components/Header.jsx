@@ -8,7 +8,7 @@ const Header = () => {
     { name: "Home", path: "/home" },
     { name: "About", path: "/about" },
     { name: "Speakers", path: "/speakers" },
-    { name: "Contact", path: "/contact" },
+    { name: "Our Partners", path: "/partners" },
   ];
 
   return (
@@ -74,12 +74,14 @@ const Header = () => {
         </nav>
 
         <div className="hidden md:block">
-          <Link
-            to="/register"
+          <a
+            href="https://luma.com/gexigzaa"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-royal-blue font-heading font-semibold px-6 md:px-8 lg:px-12 py-2.5 md:py-3 lg:py-5 text-gray-50 rounded-full text-lg md:text-[18px] lg:text-xl hover:bg-gray-100 hover:text-royal-blue transition duration-200"
           >
             Register
-          </Link>
+          </a>
         </div>
       </div>
 
@@ -102,13 +104,15 @@ const Header = () => {
             </ul>
           </nav>
           <div className="">
-            <Link
-              to="/register"
+            <a
+              href="https://luma.com/gexigzaa"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
               className="bg-royal-blue font-heading font-semibold px-8 py-3 text-gray-50 rounded-full text-xl hover:bg-gray-100 hover:text-royal-blue transition duration-200"
             >
               Register
-            </Link>
+            </a>
           </div>
         </div>
       </div>

@@ -5,10 +5,10 @@ const Hero = () => {
   return (
     <div
       className="relative min-h-screen bg-cover bg-center"
-      style={{ backgroundImage: `url(images/hero.jpg)` }}
+      style={{ backgroundImage: `url(images/hero.png)` }}
     >
-      <div className="absolute bg-black/60 inset-0 z-0">
-        <div className="md:container flex flex-col justify-between gap-8 px-10 md:gap-4 py-20 md:py-40 md:flex-row relative z-10">
+      <div className="absolute bg-black/50 inset-0 z-0">
+        <div className="md:container flex flex-col justify-between gap-8 px-10 md:gap-4 pt-30 md:pt-20  md:flex-row relative z-10">
           <div className=" flex flex-col gap-8 md:gap-12 lg:gap-20 justify-center  w-full md:w-3/4">
             <div className="flex flex-col gap-5 justify-center">
               <h1 className="text-5xl text-center md:text-left md:text-6xl lg:text-7xl font-heading text-white font-extrabold leading-14 md:leading-16 lg:leading-[75px]">
@@ -33,17 +33,22 @@ const Hero = () => {
               </ul>
             </div>
             <div className="flex md:justify-start justify-center">
-              <Link className="bg-royal-blue font-heading font-semibold px-10 md:px-30 py-5 md:py-6 text-gray-50 rounded-full text-xl md:text-[20px] lg:text-2xl hover:bg-gray-100 hover:text-royal-blue transition duration-200">
+              <a 
+                href="https://luma.com/gexigzaa"
+                className="bg-royal-blue font-heading font-semibold px-10 md:px-30 py-5 md:py-6 text-gray-50 rounded-full text-xl md:text-[20px] lg:text-2xl hover:bg-gray-100 hover:text-royal-blue transition duration-200"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Reserve my seat
-              </Link>
+              </a>
             </div>
           </div>
           <div className="w-full hidden lg:block md:w-2/4 lg:w-2/5">
             <div className="flex justify-center md:justify-end mt-6 md:mt-0">
               <img
-                src="/images/hero-img.jpg"
+                src="/images/event.jpg"
                 alt="hero image"
-                className="rounded-full w-[75%] md:w-[90%] lg:w-full shrink-0"
+                className="rounded-2xl w-[70%] md:w-[80%] lg:w-[90%] shrink-0"
               />
             </div>
           </div>
