@@ -42,7 +42,7 @@ const Event = () => {
           <h3 className="font-heading text-2xl md:text-4xl font-medium text-prussian-blue">
             Speakers
           </h3>
-          <div className="flex flex-row gap-6 md:gap-8">
+          <div className="flex flex-row gap-4 md:gap-8">
             <div className=" bg-prussian-blue rounded-full w-10 md:w-14 lg:w-16 h-10 md:h-14 lg:h-16 flex justify-center items-center text-white text-xl md:text-2xl lg:text-3xl aspect-square">
               <PiMicrophoneStage />
             </div>
