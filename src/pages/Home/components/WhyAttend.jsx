@@ -19,7 +19,7 @@ const WhyAttend = () => {
       </div>
       <div className="px-0 md:px-8 lg:px-30 grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 mt-6 md:mt-12">
         <div className="relative rounded-xl shadow flex flex-col gap-4 md:gap-8 justify-between shadow-blue-200 px-4 md:px-8 py-4 md:py-6 bg-royal-blue/20 overflow-hidden">
-          <h3 className="font-heading text-xl md:text-4xl font-medium text-prussian-blue">
+          <h3 className="font-heading text-2xl md:text-4xl font-medium text-prussian-blue">
             Expert Speakers
           </h3>
           <div className="flex flex-row gap-4 md:gap-8 justify-between">
@@ -38,7 +38,7 @@ const WhyAttend = () => {
           </div>
         </div>
         <div className="relative rounded-xl shadow flex flex-col gap-4 md:gap-8 justify-between shadow-blue-200 px-4 md:px-8 py-4 md:py-6 bg-royal-blue/20 overflow-hidden">
-          <h3 className="font-heading text-xl md:text-4xl font-medium text-prussian-blue">
+          <h3 className="font-heading text-2xl md:text-4xl font-medium text-prussian-blue">
             Interactive Roundtable
           </h3>
           <div className="flex flex-row gap-4 md:gap-8 justify-between">
@@ -56,7 +56,7 @@ const WhyAttend = () => {
           </div>
         </div>
         <div className="relative rounded-xl shadow flex flex-col gap-4 md:gap-8 justify-between shadow-blue-200 px-4 md:px-8 py-4 md:py-6 bg-royal-blue/20 overflow-hidden">
-          <h3 className="font-heading text-xl md:text-4xl font-medium text-prussian-blue">
+          <h3 className="font-heading text-2xl md:text-4xl font-medium text-prussian-blue">
             Networking & Collaboration
           </h3>
           <div className="flex flex-row gap-4 md:gap-8 justify-between">
@@ -75,7 +75,7 @@ const WhyAttend = () => {
           </div>
         </div>
         <div className="relative rounded-xl shadow flex flex-col gap-4 md:gap-8 justify-between shadow-blue-200 px-4 md:px-8 py-4 md:py-6 bg-royal-blue/20 overflow-hidden">
-          <h3 className="font-heading text-xl md:text-4xl font-medium text-prussian-blue">
+          <h3 className="font-heading text-2xl md:text-4xl font-medium text-prussian-blue">
             Real-Time Project Development
           </h3>
           <div className="flex flex-row gap-4 md:gap-8 justify-between">

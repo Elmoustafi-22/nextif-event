@@ -23,9 +23,7 @@ const Contact = () => {
 
   return (
     <footer className="bg-black py-10 md:py-20">
-      <div className="md:container mx-auto px-6 mb-8">
-        <img src='/images/location.png' className='rounded-4xl'/>
-      </div>
+      
       <div className="md:container mx-auto px-6">
         <div className="flex flex-col md:flex-row rounded-3xl overflow-hidden">
           <div className="w-full md:w-3/5 bg-gray-100 p-8 md:p-12 lg:p-16">

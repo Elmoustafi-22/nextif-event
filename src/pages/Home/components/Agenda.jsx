@@ -42,22 +42,22 @@ return (
       </h1>
       <p className="text-royal-blue flex flex-col gap-1 font-body">
         <span className="block text-lg md:text-xl">
-          December 27, 2025 | Outside Lab <br className="hidden md:block" />{" "}
-          Conference Hall, Magaji Rumfa, Kano
+          December 27, 2025 | Outside Lab {" "}
+          <br className="hidden md:block" /> Conference Hall, Magaji Rumfa, Kano
         </span>
       </p>
     </div>
-    <div className="px-0 md:px-5 lg:px-30 grid grid-cols-1 gap-4 md:gap-8 mt-8 md:mt-12">
-      <div className="rounded-xl shadow flex flex-col gap-8 md:gap-16 justify-between shadow-blue-200 px-4 md:px-8 py-3 md:py-6 bg-royal-blue/20">
+    <div className="px-0 md:px-5 lg:px-30 grid grid-cols-1 md:gap-8 mt-8 md:mt-12">
+      <div className="rounded-xl shadow flex flex-col gap-8 md:gap-16 justify-between shadow-blue-200 px-4 md:px-18 py-6 md:py-20 bg-royal-blue/20">
         {agendaItems.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col md:flex-row justify-between"
+            className="flex flex-col md:flex-row gap-0 md:gap-2 justify-between"
           >
             <p className="text-2xl md:text-3xl font-heading text-prussian-blue font-semibold flex flex-col">
               <span>{item.topic}</span>
             </p>
-            <p className="mt-1 md:mt-0 flex flex-col gap-2 md:gap-4 justify-start w-full md:w-2/3 text-lg font-body">
+            <p className="md:mt-0 flex flex-col gap-2 md:gap-4 justify-start w-full md:w-2/3 text-lg font-body text-gray-800 ">
               <span className="text-2xl md:text-3xl font-heading text-prussian-blue font-semibold ">
                 {item.title}{" "}
               </span>

@@ -44,11 +44,11 @@ const Speakers = () => {
             </span>
           </p>
         </div>
-        <div className="px-0 md:px-5 lg:px-30 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 mt-8 md:mt-12">
+        <div className="px-0 md:px-5 lg:px-30 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 md:mt-12">
           {speakers.map((speaker, index) => (
             <div
               key={index}
-              className="flex flex-col justify-between gap-8 px-4 md:px-8 py-3 md:py-6 bg-prussian-blue rounded-2xl shadow-md"
+              className="flex flex-col justify-between gap-8 px-4 md:px-8 py-6 md:py-8 bg-prussian-blue rounded-2xl shadow-md"
             >
               <p className="text-2xl font-heading text-gray-50 font-semibold">
                 {speaker.name}
