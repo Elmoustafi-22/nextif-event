@@ -58,7 +58,7 @@ const Agenda = () => {
     >
       <div className="flex md:justify-between gap-4 flex-col md:flex-row">
         <h1 className="text-left text-prussian-blue text-3xl md:text-4xl lg:text-5xl font-heading font-bold tracking-tight">
-          Agenda
+          Discussions
         </h1>
         <p className="text-royal-blue flex flex-col gap-1 font-body">
           <span className="block text-lg md:text-xl">
