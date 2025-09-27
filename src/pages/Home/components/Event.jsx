@@ -1,15 +1,44 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { PiMicrophoneStage, PiArrowUpRight } from "react-icons/pi";
+import { motion } from "framer-motion";
 
 const Event = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.3 },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <div className="bg-white py-10 md:container px-6">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ duration: 0.5 }}
+      className="bg-white py-10 md:container px-6"
+    >
       <h1 className="text-left text-prussian-blue text-3xl md:text-4xl lg:text-5xl font-heading font-bold tracking-tight">
         Event at a glance
       </h1>
-      <div className="px-0 md:px-5 lg:px-30 grid grid-cols-1 gap-8 md:grid-cols-2 mt-8 md:mt-12">
-        <div className="rounded-xl shadow flex flex-col gap-4 md:gap-8 justify-between shadow-blue-200 px-4 md:px-8 py-3 md:py-6 bg-royal-blue/20">
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        className="px-0 md:px-5 lg:px-30 grid grid-cols-1 gap-8 md:grid-cols-2 mt-8 md:mt-12"
+      >
+        <motion.div
+          variants={itemVariants}
+          className="rounded-xl shadow flex flex-col gap-4 md:gap-8 justify-between shadow-blue-200 px-4 md:px-8 py-3 md:py-6 bg-royal-blue/20"
+        >
           <h3 className="font-heading text-2xl md:text-4xl font-medium text-prussian-blue">
             Speakers
           </h3>
@@ -34,9 +63,12 @@ const Event = () => {
               <PiArrowUpRight />
             </Link>
           </div>
-        </div>
+        </motion.div>
         <div className="flex flex-col gap-6">
-          <div className="rounded-xl shadow flex flex-col gap-4 md:gap-8 justify-between shadow-blue-200 px-4 md:px-8 py-3 md:py-6 bg-royal-blue/20">
+          <motion.div
+            variants={itemVariants}
+            className="rounded-xl shadow flex flex-col gap-4 md:gap-8 justify-between shadow-blue-200 px-4 md:px-8 py-3 md:py-6 bg-royal-blue/20"
+          >
             <h3 className="font-heading text-2xl md:text-4xl font-medium text-prussian-blue">
               Develop Market Strategies
             </h3>
@@ -44,8 +76,11 @@ const Event = () => {
               Understand consumer behavior and market penetration tactics for
               Islamic finance products
             </p>
-          </div>
-          <div className="rounded-xl shadow flex flex-col gap-4 md:gap-8 justify-between shadow-blue-200 px-4 md:px-8 py-3 md:py-6 bg-royal-blue/20">
+          </motion.div>
+          <motion.div
+            variants={itemVariants}
+            className="rounded-xl shadow flex flex-col gap-4 md:gap-8 justify-between shadow-blue-200 px-4 md:px-8 py-3 md:py-6 bg-royal-blue/20"
+          >
             <h3 className="font-heading text-2xl md:text-4xl font-medium text-prussian-blue">
               Navigate Regulatory Frameworks
             </h3>
@@ -53,10 +88,10 @@ const Event = () => {
               Learn compliance requirements for Islamic financial products in
               Nigeria and globally
             </p>
-          </div>
+          </motion.div>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

@@ -6,6 +6,7 @@ import {
   PiProjectorScreenChart,
   PiStarFill,
 } from "react-icons/pi";
+import { motion } from "framer-motion";
 
 const AboutPage = () => {
   const offerings = [
@@ -66,23 +67,57 @@ const AboutPage = () => {
     },
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.3 },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <div className="bg-gray-50 font-body text-gray-800">
       {/* Hero Section */}
-      <section className="bg-prussian-blue text-white py-20">
+      <motion.section
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="bg-prussian-blue text-white py-20"
+      >
         <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-6xl font-heading font-bold">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-4xl md:text-6xl font-heading font-bold"
+          >
             About Us
-          </h1>
-          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="mt-4 text-lg md:text-xl max-w-3xl mx-auto"
+          >
             To bridge the gap between aspiring young professionals and global
             leaders in the Islamic finance industry.
-          </p>
+          </motion.p>
         </div>
-      </section>
+      </motion.section>
 
       {/* Who We Are Section */}
-      <section className="py-20">
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        className="py-20"
+      >
         <div className="container mx-auto px-6">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-prussian-blue">
@@ -100,13 +135,25 @@ const AboutPage = () => {
             </p>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Vision & Mission Section */}
-      <section className="bg-white py-20">
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        className="bg-white py-20"
+      >
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="text-center md:text-left">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              className="text-center md:text-left"
+            >
               <h3 className="text-2xl md:text-3xl font-heading font-bold text-prussian-blue">
                 Our Vision
               </h3>
@@ -115,8 +162,14 @@ const AboutPage = () => {
                 lead and innovate in Islamic finance, supported by a strong
                 network of global players and mentors
               </p>
-            </div>
-            <div className="text-center md:text-left">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              className="text-center md:text-left"
+            >
               <h3 className="text-2xl md:text-3xl font-heading font-bold text-prussian-blue">
                 Our Mission
               </h3>
@@ -126,10 +179,10 @@ const AboutPage = () => {
                 Islamic finance industry, fostering a new generation of ethical
                 and innovative leaders.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* What We Offer Section */}
       <section className="py-20">
@@ -140,22 +193,28 @@ const AboutPage = () => {
             </h2>
             <p className="mt-4 text-lg">Your Path Starts Here</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12"
+          >
             {offerings.map((item, index) => (
-              <div
+              <motion.div
                 key={index}
+                variants={itemVariants}
                 className="bg-white p-8 rounded-lg shadow-md text-center text-prussian-blue"
               >
                 <div className="flex justify-center mb-4">{item.icon}</div>
                 <h4 className="text-xl font-heading font-semibold">
                   {item.title}
                 </h4>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
-
 
       {/* Testimonials Section */}
       <section className="bg-prussian-blue text-white py-20">
@@ -165,10 +224,17 @@ const AboutPage = () => {
               Reviews from the last Cohort
             </h2>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12"
+          >
             {testimonials.map((testimonial, index) => (
-              <div
+              <motion.div
                 key={index}
+                variants={itemVariants}
                 className="bg-white/10 p-6 rounded-lg shadow-lg flex flex-col justify-between"
               >
                 <div>
@@ -185,9 +251,9 @@ const AboutPage = () => {
                   </p>
                   <p>({testimonial.country})</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
     </div>
@@ -195,3 +261,4 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+

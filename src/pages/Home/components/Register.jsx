@@ -1,13 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { PiArrowUpRight } from "react-icons/pi";
 import Countdown from "@/components/Countdown";
+import { motion } from "framer-motion";
 
 const Register = () => {
   const eventDate = "2025-12-27T09:00:00+01:00";
   return (
     <>
-      <section className="md:container px-6 mt-10 py-10 bg-prussian-blue">
+      <motion.section
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.5 }}
+        className="md:container px-6 mt-10 py-10 bg-prussian-blue"
+      >
         <div className="flex md:justify-between gap-4 flex-col md:flex-row">
           <h1 className="text-left text-gray-50 text-3xl md:text-4xl lg:text-5xl font-heading font-bold tracking-tight">
             Register Now
@@ -20,7 +26,13 @@ const Register = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row gap-4 md:gap-0 mt-4 md:mt-8">
-          <div className="px-0 md:px-5 lg:px-30 grid grid-cols-1 gap-8 mt-8 md:mt-12 md:w-3/4 w-full">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.8 }}
+            className="px-0 md:px-5 lg:px-30 grid grid-cols-1 gap-8 mt-8 md:mt-12 md:w-3/4 w-full"
+          >
             <div className="bg-royal-blue relative pl-8 md:pl-20 lg:pl-30 py-6 flex flex-col items-start">
               <img
                 src="/images/register-vector.png"
@@ -34,12 +46,24 @@ const Register = () => {
                 <Countdown targetDate={eventDate} className="text-white" />
               </div>
             </div>
-          </div>
-          <div className="md:w-1/4 w-[80%] mx-auto mt-8 md:mt-4">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.8 }}
+            className="md:w-1/4 w-[80%] mx-auto mt-8 md:mt-4"
+          >
             <img src="/images/hero-event.jpg" />
-          </div>
+          </motion.div>
         </div>
-        <div className="flex flex-col justify-center items-center mt-10 md:mt-16 lg:mt-20">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="flex flex-col justify-center items-center mt-10 md:mt-16 lg:mt-20"
+        >
           <a
             href="https://luma.com/gexigzaa"
             target="_blank"
@@ -48,11 +72,16 @@ const Register = () => {
           >
             Register <PiArrowUpRight />{" "}
           </a>
-        </div>
-      </section>
-      <div className="">
+        </motion.div>
+      </motion.section>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 1 }}
+      >
         <img src="/images/location.png" />
-      </div>
+      </motion.div>
     </>
   );
 };

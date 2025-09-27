@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const PartnersPage = () => {
   const partners = [
@@ -25,27 +26,62 @@ const PartnersPage = () => {
     },
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.3 },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <div className="bg-gray-50 font-body text-gray-800">
       {/* Hero Section */}
-      <section className="bg-prussian-blue text-white py-20">
+      <motion.section
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="bg-prussian-blue text-white py-20"
+      >
         <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-6xl font-heading font-bold">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-4xl md:text-6xl font-heading font-bold"
+          >
             Our Partners
-          </h1>
-          <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="mt-4 text-lg md:text-xl max-w-3xl mx-auto"
+          >
             We are proud to collaborate with leading organizations to foster innovation and growth in the Islamic finance industry.
-          </p>
+          </motion.p>
         </div>
-      </section>
+      </motion.section>
 
       {/* Partners Section */}
-      <section className="py-20">
+      <motion.section
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        className="py-20"
+      >
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
             {partners.map((partner, index) => (
-              <div
+              <motion.div
                 key={index}
+                variants={itemVariants}
                 className="bg-white p-8 rounded-lg shadow-md text-center flex flex-col"
               >
                 <div className="flex justify-center mb-4">
@@ -70,11 +106,11 @@ const PartnersPage = () => {
                     </p>
                   )}
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

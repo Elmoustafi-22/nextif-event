@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const SpeakersPage = () => {
   const speakers = [
@@ -60,25 +61,57 @@ const SpeakersPage = () => {
     },
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.3 },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: { opacity: 1, scale: 1 },
+  };
+
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
       className="py-20 bg-cover bg-center relative"
       style={{ backgroundImage: `url(/images/speakers-bg.png)` }}
     >
       <div className="absolute inset-0 bg-black/50 z-0"></div>
       <div className="md:container px-6 relative z-10">
         <div className="text-center mb-12">
-          <h1 className="text-gray-50 text-4xl md:text-5xl lg:text-6xl font-heading font-bold tracking-tight">
+          <motion.h1
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-gray-50 text-4xl md:text-5xl lg:text-6xl font-heading font-bold tracking-tight"
+          >
             Our Esteemed Speakers
-          </h1>
-          <p className="text-gray-200 font-body mt-4 text-lg md:text-xl">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="text-gray-200 font-body mt-4 text-lg md:text-xl"
+          >
             Learn from the brightest minds in Islamic Finance and technology.
-          </p>
+          </motion.p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
           {speakers.map((speaker, index) => (
-            <div
+            <motion.div
               key={index}
+              variants={itemVariants}
               className="bg-prussian-blue/80 backdrop-blur-sm rounded-2xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300 flex flex-col justify-between"
             >
               <div>
@@ -107,11 +140,11 @@ const SpeakersPage = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

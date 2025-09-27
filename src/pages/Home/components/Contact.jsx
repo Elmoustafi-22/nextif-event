@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { PiFacebookLogoFill, PiLinkedinLogoFill, PiInstagramLogoFill, PiYoutubeLogoFill } from 'react-icons/pi';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -22,11 +23,22 @@ const Contact = () => {
   };
 
   return (
-    <footer className="bg-black py-10 md:py-20">
-      
+    <motion.footer
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.8 }}
+      className="bg-black py-10 md:py-20"
+    >
       <div className="md:container mx-auto px-6">
         <div className="flex flex-col md:flex-row rounded-3xl overflow-hidden">
-          <div className="w-full md:w-3/5 bg-gray-100 p-8 md:p-12 lg:p-16">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8 }}
+            className="w-full md:w-3/5 bg-gray-100 p-8 md:p-12 lg:p-16"
+          >
             <h2 className="text-2xl md:text-3xl font-bold font-heading text-prussian-blue mb-8">
               NEXTIF Islamic Finance Roundtable
             </h2>
@@ -69,8 +81,14 @@ const Contact = () => {
             <p className="mt-16 text-sm text-gray-500 font-body">
               © 2025 NextIF. All rights reserved.
             </p>
-          </div>
-          <div className="w-full md:w-2/5 bg-royal-blue p-8 md:p-12 lg:p-16 text-white rounded-3xl md:-ml-8 md:mt-0 -mt-6">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8 }}
+            className="w-full md:w-2/5 bg-royal-blue p-8 md:p-12 lg:p-16 text-white rounded-3xl md:-ml-8 md:mt-0 -mt-6"
+          >
             <h3 className="text-xl font-bold font-heading">GET IN TOUCH</h3>
             <p className="mt-2 font-body text-sm">
               Reach out with inquiries about tickets, partnerships, or event
@@ -141,10 +159,10 @@ const Contact = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

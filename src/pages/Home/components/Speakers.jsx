@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { PiArrowUpRight } from 'react-icons/pi'
+import { PiArrowUpRight } from 'react-icons/pi';
+import { motion } from "framer-motion";
 
 const Speakers = () => {
   const speakers = [
@@ -26,8 +27,26 @@ const Speakers = () => {
       title: "Senior Advisor, Sustainable Islamic Banking",
     },
   ];
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.3 },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: { opacity: 1, scale: 1 },
+  };
+
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.5 }}
       className="mt-10 py-10 bg-cover bg-center relative"
       style={{ backgroundImage: `url(/images/speakers-bg.png)` }}
     >
@@ -44,26 +63,33 @@ const Speakers = () => {
             </span>
           </p>
         </div>
-        <div className="px-0 md:px-5 lg:px-30 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 md:mt-12">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          className="px-0 md:px-5 lg:px-30 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 md:mt-12"
+        >
           {speakers.map((speaker, index) => (
-            <div
+            <motion.div
               key={index}
+              variants={itemVariants}
               className="flex flex-col justify-between gap-8 px-4 md:px-8 py-6 md:py-8 bg-prussian-blue rounded-2xl shadow-md"
             >
               <p className="text-2xl font-heading text-gray-50 font-semibold">
                 {speaker.name}
               </p>
               <p className="text-lg font-body text-gray-50">{speaker.title}</p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
         <div className="inline-block mt-8 px-0 md:px-5 lg:px-30">
-          <Link className="flex gap-2 whitespace-nowrap font-body bg-prussian-blue border-0 shadow-sm px-6 py-3 text-white text-xl rounded-full items-center">
+          <Link to="/speakers" className="flex gap-2 whitespace-nowrap font-body bg-prussian-blue border-0 shadow-sm px-6 py-3 text-white text-xl rounded-full items-center">
             And more <PiArrowUpRight />{" "}
           </Link>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
