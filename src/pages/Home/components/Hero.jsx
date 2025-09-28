@@ -5,9 +5,9 @@ const Hero = () => {
   return (
     <div
       className="relative min-h-screen bg-cover bg-center"
-      style={{ backgroundImage: `url(images/hero.png)` }}
+      style={{ backgroundImage: `url(images/hero-bg.png)` }}
     >
-      <div className="absolute bg-black/50 inset-0 z-0">
+      <div className="absolute bg-black/40 inset-0 z-0">
         <div className="md:container flex flex-col justify-between gap-8 px-10 md:gap-4 pt-30 md:pt-20  md:flex-row relative z-10">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
@@ -44,9 +44,10 @@ const Hero = () => {
                 className="hidden md:flex list-disc flex-row justify-start gap-2 md:gap-8 font-body text-white italic mt-4 text-sm md:text-base px-6 md:px-5"
               >
                 {[
-                  "Learn practical halal fintech models",
-                  "Network with mentors",
-                  "Pitch ideas to halal investors",
+                  "Expert Speakers",
+                  "Interactive Roundtable",
+                  "Networking & Collaboration",
+                  "Real-Time Project Development",
                 ].map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
