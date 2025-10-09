@@ -126,13 +126,14 @@ const Header = () => {
           className="hidden md:block"
         >
           <a
-            href="https://luma.com/gexigzaa"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://luma.com/event/evt-hLkz6ZcRt5XX54G"
+            data-luma-action="checkout"
+            data-luma-event-id="evt-hLkz6ZcRt5XX54G"
             className="bg-royal-blue font-heading font-semibold px-6 md:px-8 lg:px-12 py-2.5 md:py-3 lg:py-5 text-gray-50 rounded-full text-lg md:text-[18px] lg:text-xl hover:bg-gray-100 hover:text-royal-blue transition duration-200"
           >
             Register
           </a>
+          
         </motion.div>
       </div>
 
@@ -173,9 +174,9 @@ const Header = () => {
                 transition={{ delay: 0.5, duration: 0.3 }}
               >
                 <a
-                  href="https://luma.com/gexigzaa"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="https://luma.com/event/evt-hLkz6ZcRt5XX54G"
+                  data-luma-action="checkout"
+                  data-luma-event-id="evt-hLkz6ZcRt5XX54G"
                   onClick={() => setIsOpen(false)}
                   className="bg-royal-blue font-heading font-semibold px-8 py-3 text-gray-50 rounded-full text-xl hover:bg-gray-100 hover:text-royal-blue transition duration-200"
                 >

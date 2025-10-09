@@ -59,11 +59,12 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.8 }}
               className="flex md:justify-start justify-center"
             >
+              
               <a
-                href="https://luma.com/gexigzaa"
+                href="https://luma.com/event/evt-hLkz6ZcRt5XX54G"
                 className="bg-royal-blue font-heading font-semibold px-10 md:px-30 py-5 md:py-6 text-gray-50 rounded-full text-xl md:text-[20px] lg:text-2xl hover:bg-gray-100 hover:text-royal-blue transition duration-200"
-                target="_blank"
-                rel="noopener noreferrer"
+                data-luma-action="checkout"
+                data-luma-event-id="evt-hLkz6ZcRt5XX54G"
               >
                 Reserve my seat
               </a>

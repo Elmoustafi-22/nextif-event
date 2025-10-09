@@ -65,16 +65,16 @@ const Register = () => {
           className="flex flex-col justify-center items-center mt-10 md:mt-16 lg:mt-20"
         >
           <a
-            href="https://luma.com/gexigzaa"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://luma.com/event/evt-hLkz6ZcRt5XX54G"
+            data-luma-action="checkout"
+            data-luma-event-id="evt-hLkz6ZcRt5XX54G"
             className="text-xl md:text-2xl font-body font-semibold text-gray-50 px-8 md:px-18 py-2 md:py-4 flex gap-2 items-center whitespace-nowrap rounded-full bg-royal-blue"
           >
             Register <PiArrowUpRight />{" "}
           </a>
+          
         </motion.div>
       </motion.section>
-      
     </>
   );
 };
