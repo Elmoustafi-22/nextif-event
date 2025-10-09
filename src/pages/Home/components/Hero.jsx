@@ -8,12 +8,12 @@ const Hero = () => {
       style={{ backgroundImage: `url(images/hero-bg-compressed.jpg)` }}
     >
       <div className="absolute bg-black/40 inset-0 z-0">
-        <div className="md:container flex flex-col justify-between gap-8 px-10 md:gap-4 pt-30 md:pt-20  md:flex-row relative z-10">
+        <div className="md:container flex flex-col justify-between gap-8 px-10 md:gap-4 pt-30 md:pt-20 md:flex-row relative z-10">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className=" flex flex-col gap-8 md:gap-12 lg:gap-20 justify-center  w-full md:w-3/4"
+            className="flex flex-col gap-8 md:gap-12 lg:gap-20 justify-center w-full md:w-3/4"
           >
             <div className="flex flex-col gap-5 justify-center">
               <motion.h1
