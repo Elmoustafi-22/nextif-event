@@ -18,13 +18,6 @@ const PartnersPage = () => {
       description:
         "The International Institute of Islamic Banking and Finance (IIIBF), Bayero University, Kano (BUK), Nigeria, is an exciting institution with a modest vibrant history and promising future, a wonderful place to learn and grow intellectually and academically through the Islamic teaching and principles. IIIBF possesses a wealth of academic experience combined with a great spirit and a commitment to excellence that clearly sets it apart from other institutes in Nigeria.",
     },
-    {
-      name: "RevsAI",
-      location: "",
-      logo: "/images/revsai.webp",
-      description:
-        "RevsAI (Revenue Revolution Amplifier Injector), where we build AI-powered marketing automation tools that help businesses improve their online visibility, reputation, customer engagement, and sales.",
-    },
   ];
 
   const containerVariants = {

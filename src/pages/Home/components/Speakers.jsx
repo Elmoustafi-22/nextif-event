@@ -5,26 +5,23 @@ import { motion } from "framer-motion";
 
 const Speakers = () => {
   const speakers = [
-    { name: "Mr. Bala Muhammad", title: "CEO, OpenIF" },
+    { name: " Mr. Mudathir Adesanya", title: "Founder, M-tech Noble Hub" },
     {
-      name: "Dr. Aisha Rahman",
-      title: "Head of Islamic Finance Research, Global Finance Institute",
+      name: "Assoc Prof. Shukurat Bello (CSAA)",
+      title:
+        "Team Lead, Shafana Innovate Hub and the CEO/Founder of Spak Innovation Hub.",
     },
     {
-      name: "Sheikh Ahmad Al-Maktoum",
-      title: "Chairman, Ethical Investment Solutions",
+      name: "Mrs. Shakirat Animashaun",
+      title: "Founder, Enricher FinTech",
     },
     {
-      name: "Prof. Sarah Johnson",
-      title: "Director, Center for Islamic Economics",
+      name: "Mr. Abubakar Abbagana",
+      title: "Co-founder Ethica Investment",
     },
     {
-      name: "Mr. Hassan Ibrahim",
-      title: "Chief Innovation Officer, TechFin Islamic",
-    },
-    {
-      name: "Ms. Fatima Al-Zahra",
-      title: "Senior Advisor, Sustainable Islamic Banking",
+      name: "Prof. Usman Shuaib Zunnurain",
+      title: "Director, IIIBF. Member,CBN-FRACE",
     },
   ];
 

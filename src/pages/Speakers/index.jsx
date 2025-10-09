@@ -5,60 +5,37 @@ import Contact from "@/components/Contact";
 const SpeakersPage = () => {
   const speakers = [
     {
-      name: "Mr. Bala Muhammad",
-      title: "CEO, OpenIF",
-      bio: "Mr. Bala Muhammad is a visionary leader with over 20 years of experience in the Islamic finance industry. As the CEO of OpenIF, he has been instrumental in driving innovation and promoting ethical financial practices. He is a sought-after speaker on topics such as fintech, sustainable investing, and the future of Islamic finance. His work has been recognized with numerous awards, and he is a passionate advocate for financial inclusion.",
-      topics: ["Islamic Fintech", "Sustainable Investing", "Future of Finance"],
+      name: "Mr. Mudathir Adesanya",
+      title: "Founder, M-tech Noble Hub",
+      bio: "About Mudathir Adesanya is an Islamic finance consultant and media CEO with a Master's degree in Islamic Banking and Finance from Bayero University, Kano, and a Bachelor's degree in Accounting from Crescent University, Abeokuta. He combines his expertise in Islamic finance, business development, and commodity trading to provide innovative and effective solutions to clients across various sectors. He is the Managing Director and CEO of IFING MEDIA LTD, a leading media company that provides news, insights, and analysis on Islamic finance and economics. He has grown IFING MEDIA to a prominent and trusted source of information and knowledge for the Islamic finance community, reaching a global audience of over 100,000 subscribers and followers. He has also established and maintained strategic partnerships with key stakeholders, such as regulators, scholars, practitioners, and investors, to promote and support the development and growth of the Islamic finance industry. is also a Lead Consultant at BIFCONT NG, a consulting firm that offers Islamic finance advisory, training, and research services. He has helped various clients, ranging from banks, microfinance institutions, cooperatives, to non-governmental organizations, foundations, and associations, design and implement Islamic finance products, services, and systems, such as Islamic microfinance, Islamic crowdfunding, Islamic social finance, and Islamic fintech. He has also conducted market research, feasibility studies, and impact assessments, as well as delivered training and capacity building programs, to enhance the skills and knowledge of his clients and their beneficiaries. He is passionate about Islamic finance and its potential to create positive social and economic impact in the world. He is constantly learning and improving his skills and knowledge, as well as sharing his insights and experiences with others through his media platforms and consulting projects. He is a skilled and analytical leader, communicator, and problem-solver, who values collaboration, innovation, and excellence.",
+      topics: ["Islamic Finance", "Media & Communications", "Islamic Fintech"],
     },
     {
-      name: "Dr. Aisha Rahman",
-      title: "Head of Islamic Finance Research, Global Finance Institute",
-      bio: "Dr. Aisha Rahman is a leading academic and researcher in Islamic finance. Her work at the Global Finance Institute has been published in numerous prestigious journals. She is a frequent speaker at international conferences, where she shares her insights on risk management, corporate governance, and the social impact of Islamic banking. She holds a PhD in Islamic Finance from the University of London.",
+      name: "Assoc Prof. Shukurat Bello (CSAA)",
+      title:
+        "AAT, CIFE, CSAA, Team Lead, Shafana Innovate Hub and the CEO/Founder of Spak Innovation Hub.",
+      bio: "Dr. Bello is an Associate Professor at Bayero University Kano, Nigeria, with over 20 years of experience in teaching, research, and community service. She specializes in business management, entrepreneurship, and innovation, and is recognized for her impactful role in empowering and mentoring emerging entrepreneurs. Dr. Bello's contributions to the academic and entrepreneurial landscape are matched by her active involvement in various startup ecosystems, where she has consistently driven change through mentorship and advisory roles. s an Advisory Committee Member of a prominent non-interest financial institutions, Dr. Bello provides strategic guidance, fostering growth and sustainability within ethical financial models. She has also been a Sabbatical Fellow at Opolo Global Innovation, where she nurtured entrepreneurs through pre-incubation, incubation, and acceleration programs, helping them reimagine their market approach. Dr. Bello is the Team Lead of Shafana Innovate Hub and the CEO/Founder of Spak Innovation Hub, Shafan Consult and Enterprises, and Shafana Pre-varsity Academy, Kano. She is also a Board Member of several organizations, including Safarina Travels and Tours Limited and IFING Media Limited, With a strong foundation in Shariah-compliant finance, Dr. Bello holds certifications, including Certified Shariah Advisor and Auditor (AAOIFI), Certified Islamic Finance Executive, and Associate Accounting Technician (ICAN). She is also a Fellow of the Institute of Strategic Entrepreneurship of Nigeria. Dr. Bello's career at Bayero University includes key leadership roles, such as Sub-Dean of Academics in the Faculty of Management Sciences and Pioneer Coordinator of the Entrepreneurship Programs at the Dangote Business School. She presently manages the Bayero University Innovation Hub, where she leads initiatives that foster innovation, support startup development, and bridge academia with the entrepreneurial ecosystem. Beyond her academic and entrepreneurial ventures, Dr. Bello is deeply committed to supporting entrepreneurship programs and outreach initiatives, where she plays a crucial role in promoting learning and community engagement. She has participated in international programs, such as the NUFFIC TMT+ Program on Horticulture and Entrepreneurship, sponsored by the Ministry of Foreign Affairs, The Netherlands. Through her personal experiences and research, Dr. Bello has developed a unique approach to enhancing intuition-driven decision-making and fostering innovation, both in academia and the entrepreneurial ecosystem.",
       topics: [
-        "Risk Management",
-        "Corporate Governance",
-        "Social Impact Banking",
+        "Innovation Hub Management",
+        "Shariah-compliant Finance",
+        "Entrepreneurship Education",
       ],
     },
     {
-      name: "Sheikh Ahmad Al-Maktoum",
-      title: "Chairman, Ethical Investment Solutions",
-      bio: "Sheikh Ahmad Al-Maktoum is a prominent figure in the world of ethical and Islamic investments. As the Chairman of Ethical Investment Solutions, he has overseen the development of innovative financial products that align with Sharia principles. He is a strong advocate for social responsibility and sustainable development, and his firm has been a leader in financing green projects.",
+      name: "Mrs. Shakirat Animashaun",
+      title: "Founder, Enricher FinTech",
+      bio: "She is Shakirat Animashaun, the Founder/CEO of Enricher Fintech, a platform for fundraising and investments, which are fundamental to the success of every business. In her over 20 years of entrepreneurial experience in the tech arena, Shakirat has worked with Flyingdove Institute of Information Technology, an edtech company where over 5,000 youths have been trained in both soft and hardware engineering, system security computer networking, etc.",
       topics: [
-        "Ethical Investments",
-        "Sharia-compliant Products",
-        "Sustainable Development",
+        "Fundraising & Investments",
+        "Fintech Solutions",
+        "Tech Education",
       ],
     },
     {
-      name: "Prof. Sarah Johnson",
-      title: "Director, Center for Islamic Economics",
-      bio: "Professor Sarah Johnson is a distinguished scholar and the Director of the Center for Islamic Economics. Her expertise lies in the historical development of Islamic economic thought and its application in contemporary markets. She is the author of several influential books and articles on the subject, and she is a respected voice in academic and policy circles.",
-      topics: [
-        "Islamic Economic History",
-        "Contemporary Markets",
-        "Economic Policy",
-      ],
-    },
-    {
-      name: "Mr. Hassan Ibrahim",
-      title: "Chief Innovation Officer, TechFin Islamic",
-      bio: "Mr. Hassan Ibrahim is a pioneer in the Islamic fintech space. As the Chief Innovation Officer at TechFin Islamic, he is responsible for developing cutting-edge solutions that are transforming the industry. He is passionate about leveraging technology to enhance financial inclusion and promote ethical finance. He was recently named one of the top 50 innovators in finance.",
-      topics: [
-        "Fintech Innovation",
-        "Financial Inclusion",
-        "Digital Transformation",
-      ],
-    },
-    {
-      name: "Ms. Fatima Al-Zahra",
-      title: "Senior Advisor, Sustainable Islamic Banking",
-      bio: "Ms. Fatima Al-Zahra is a seasoned expert in sustainable Islamic banking. With a career spanning over two decades, she has advised numerous financial institutions on integrating sustainability and ethical principles into their operations. She is a powerful voice for responsible finance and a mentor to many young professionals in the field. She serves on the board of several non-profit organizations.",
-      topics: [
-        "Sustainable Banking",
-        "Ethical Finance",
-        "Corporate Social Responsibility",
-      ],
+      name: "Mr. Abubakar Abbagana",
+      title: "Ethical Wealth Management Advisor",
+      bio: "Abubakar Abbagana, based in Abuja, Federal Capital Territory, NG, is currently a Wealth Management Advisor - Islamic Products at Meristem Nigeria. Abubakar Abbagana brings experience from previous roles at Jaiz Bank Plc and LOTUS Bank. Abubakar Abbagana holds a 2020 - 2022 Master of Business Administration - MBA in Finance and Investment Ahmadu Bello University.",
+      topics: ["Wealth Management", "Islamic Banking", "Investment Products"],
     },
   ];
 
@@ -123,13 +100,34 @@ const SpeakersPage = () => {
                 <p className="text-lg font-body text-gray-300 mt-2">
                   {speaker.title}
                 </p>
-                <p className="text-md font-body text-gray-400 mt-4">
-                  {speaker.bio}
-                </p>
+                <div className="text-md font-body text-gray-400 mt-4">
+                  {speaker.bio.split('. ').reduce((result, sentence, i, array) => {
+                    // Group sentences into 3-4 paragraphs
+                    const totalSentences = array.length;
+                    const paragraphCount = totalSentences > 12 ? 4 : 3;
+                    const sentencesPerParagraph = Math.ceil(totalSentences / paragraphCount);
+                    
+                    if (i % sentencesPerParagraph === 0 && i > 0) {
+                      result.push([]);
+                    }
+                    
+                    if (!result.length) {
+                      result.push([]);
+                    }
+                    
+                    result[result.length - 1].push(sentence);
+                    return result;
+                  }, []).map((paragraph, pIndex) => (
+                    <p key={pIndex} className="mb-3">
+                      {paragraph.join('. ')}
+                      {paragraph[paragraph.length - 1].slice(-1) !== '.' ? '.' : ''}
+                    </p>
+                  ))}
+                </div>
               </div>
               <div className="mt-4">
                 <h4 className="text-lg font-heading text-gray-200 font-semibold">
-                  Topics:
+                  Tags:
                 </h4>
                 <div className="flex flex-wrap gap-2 mt-2">
                   {speaker.topics.map((topic, i) => (

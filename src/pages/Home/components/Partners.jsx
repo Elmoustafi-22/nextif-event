@@ -13,10 +13,6 @@ const Partners = () => {
       name: "IIIBF",
       logo: "/images/iiibf.webp",
     },
-    {
-      name: "RevsAI",
-      logo: "/images/revsai.webp",
-    },
   ];
 
   const containerVariants = {
