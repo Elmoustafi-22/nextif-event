@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 
 const Speakers = () => {
   const speakers = [
-    { name: " Mr. Mudathir Adesanya", title: "Founder, M-tech Noble Hub" },
     {
       name: "Assoc Prof. Shukurat Bello (CSAA)",
       title:
         "Team Lead, Shafana Innovate Hub and the CEO/Founder of Spak Innovation Hub.",
     },
+    { name: " Mr. Mudathir Adesanya", title: "Founder, M-tech Noble Hub" },
     {
       name: "Mrs. Shakirat Animashaun",
       title: "Founder, Enricher FinTech",
