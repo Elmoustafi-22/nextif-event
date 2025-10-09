@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div
       className="relative min-h-screen bg-cover bg-center"
-      style={{ backgroundImage: `url(images/hero-bg.png)` }}
+      style={{ backgroundImage: `url(images/hero-bg-compressed.jpg)` }}
     >
       <div className="absolute bg-black/40 inset-0 z-0">
         <div className="md:container flex flex-col justify-between gap-8 px-10 md:gap-4 pt-30 md:pt-20  md:flex-row relative z-10">
