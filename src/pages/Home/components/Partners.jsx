@@ -93,7 +93,10 @@ const Partners = () => {
             variants={itemVariants}
             className="text-lg md:text-xl font-body text-gray-800 max-w-3xl mx-auto mb-10"
           >
-            Join us as a partner or sponsor to connect with a vibrant community of innovators, entrepreneurs, and investors in the Islamic finance ecosystem. Showcase your brand and support the next generation of ethical finance.
+            Join us as a partner or sponsor to connect with a vibrant community
+            of innovators, entrepreneurs, and investors in the Islamic finance
+            ecosystem. Showcase your brand and support the next generation of
+            ethical finance.
           </motion.p>
 
           <motion.div
@@ -101,18 +104,25 @@ const Partners = () => {
             className="flex flex-col md:flex-row justify-center items-center gap-8"
           >
             <a
-              href="mailto:nextif.connect@gmail.com"
+              href="https://forms.gle/xo7v5ihgTmhW1Mt27"
+              target="_blank"
+              rel="noopenner noreferrer"
               className="bg-royal-blue text-white font-bold px-8 py-4 rounded-full text-lg hover:bg-prussian-blue transition-colors flex items-center gap-3"
             >
-              <FiMail />
-              Email Us
+              Partner with us
             </a>
             <div className="flex flex-col gap-4 text-left">
-              <a href="tel:+2348035462396" className="flex items-center gap-3 text-prussian-blue hover:text-royal-blue">
+              <a
+                href="tel:+2348035462396"
+                className="flex items-center gap-3 text-prussian-blue hover:text-royal-blue"
+              >
                 <FiPhone />
                 <span>Founder: +234 803 546 2396</span>
               </a>
-              <a href="tel:+2348144232758" className="flex items-center gap-3 text-prussian-blue hover:text-royal-blue">
+              <a
+                href="tel:+2348144232758"
+                className="flex items-center gap-3 text-prussian-blue hover:text-royal-blue"
+              >
                 <FiPhone />
                 <span>Co-Founder: +234 814 423 2758</span>
               </a>

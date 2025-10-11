@@ -6,13 +6,18 @@ import { motion } from "framer-motion";
 const Speakers = () => {
   const speakers = [
     {
-      name: "Assoc Prof. Shukurat Bello (CSAA)",
-      title:
-        "Team Lead, Shafana Innovate Hub and the CEO/Founder of Spak Innovation Hub.",
+      name: "Prof. Usman Shuaib Zunnurain",
+      title: "Director, IIIBF. Member,CBN-FRACE",
     },
+
     {
       name: " Mr. Mudathir Adesanya",
       title: "Founder, M-tech Noble Hub and MD IFING",
+    },
+    {
+      name: "Assoc Prof. Shukurat Bello (CSAA)",
+      title:
+        "Team Lead, Shafana Innovate Hub and the CEO/Founder of Spak Innovation Hub.",
     },
     {
       name: "Mrs. Shakirat Animashaun",
@@ -21,10 +26,6 @@ const Speakers = () => {
     {
       name: "Mr. Abubakar Abbagana",
       title: "Co-founder Ethica Investment",
-    },
-    {
-      name: "Prof. Usman Shuaib Zunnurain",
-      title: "Director, IIIBF. Member,CBN-FRACE",
     },
   ];
 
