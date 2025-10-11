@@ -13,26 +13,23 @@ const Hero = () => {
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="flex flex-col gap-8 md:gap-12 lg:gap-20 justify-center w-full md:w-3/4"
+            className="flex flex-col gap-8 md:gap-12 lg:gap-16 justify-center w-full md:w-3/4"
           >
-            <div className="flex flex-col gap-5 justify-center">
+            <div className="flex flex-col gap-3 justify-center">
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-5xl text-center md:text-left md:text-6xl lg:text-7xl font-heading text-white font-extrabold leading-14 md:leading-16 lg:leading-[75px]"
+                className="text-5xl  text-center md:text-left md:text-5xl lg:text-[63px] font-heading text-white font-extrabold leading-14 md:leading-16 lg:leading-[75px]"
               >
-                NEXTIF
-                <br />
-                <span className="text-5xl md:text-6xl">
-                  Islamic Finance and Innovation Roundtable
-                </span>{" "}
+                The Islamic Finance <br className="hidden md:block"/> and Innovation Roundtable
+                
               </motion.h1>
               <motion.h3
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="font-heading text-2xl mt-2 md:mt-4 md:text-[26px] lg:text-[31px] text-center md:text-left italic text-white"
+                className="font-heading text-2xl mt-2 md:mt-3 md:text-[26px] lg:text-[31px] text-center md:text-left italic text-white"
               >
                 <span className="font-bold">Theme</span>: Building the Next Big
                 Thing with Islamic Finance
@@ -59,7 +56,6 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.8 }}
               className="flex md:justify-start justify-center"
             >
-              
               <a
                 href="https://luma.com/event/evt-hLkz6ZcRt5XX54G"
                 className="bg-royal-blue font-heading font-semibold px-10 md:px-30 py-5 md:py-6 text-gray-50 rounded-full text-xl md:text-[20px] lg:text-2xl hover:bg-gray-100 hover:text-royal-blue transition duration-200"
