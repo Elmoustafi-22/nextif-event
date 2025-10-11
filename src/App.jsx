@@ -5,10 +5,12 @@ import HomePage from './pages/Home'
 import AboutPage from './pages/About'
 import SpeakersPage from './pages/Speakers'
 import PartnersPage from './pages/Partners'
+import ScrollToTop from './components/ScrollToTop'
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop/>
       <Header/>
       <Routes>
         <Route path='/' element={<HomePage/>}/>
