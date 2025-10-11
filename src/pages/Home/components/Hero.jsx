@@ -20,9 +20,9 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-4xl  text-center md:text-left md:text-5xl lg:text-[63px] font-heading text-white font-extrabold leading-14 md:leading-16 lg:leading-[75px]"
+                className="text-5xl  text-center md:text-left md:text-5xl lg:text-[63px] font-heading text-white font-extrabold leading-12 md:leading-16 lg:leading-[75px]"
               >
-                The Islamic Finance <br className="hidden md:block"/> and Innovation Roundtable
+                The Islamic Finance <br/> and Innovation Roundtable
                 
               </motion.h1>
               <motion.h3
