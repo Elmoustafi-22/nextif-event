@@ -25,7 +25,7 @@ const Speakers = () => {
     },
     {
       name: "Mr. Abubakar Abbagana",
-      title: "Co-founder Ethica Investment",
+      title: "Co-founder, Ethica Investment",
     },
   ];
 
