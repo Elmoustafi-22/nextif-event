@@ -54,6 +54,7 @@ const Agenda = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.5 }}
+      id="agenda"
       className="md:container px-6 mt-6 md:mt-10"
     >
       <div className="flex md:justify-between gap-4 flex-col md:flex-row">

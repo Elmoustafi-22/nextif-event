@@ -12,6 +12,7 @@ const Register = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.5 }}
+        id="register"
         className="md:container px-6 mt-8 md:mt-10 py-5 md:py-10 bg-prussian-blue"
       >
         <div className="flex md:justify-between gap-2 md:gap-4 flex-col md:flex-row">

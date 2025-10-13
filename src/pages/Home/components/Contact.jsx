@@ -22,6 +22,23 @@ const Contact = () => {
     window.location.href = mailtoLink;
   };
 
+  // Function to handle smooth scroll to register section
+  const scrollToRegister = (e) => {
+    e.preventDefault();
+    const registerSection = document.querySelector('#register');
+    if (registerSection) {
+      registerSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToAgenda = (e) => {
+    e.preventDefault();
+    const agendaSection = document.querySelector("#agenda");
+    if (agendaSection) {
+      agendaSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <motion.footer
       initial={{ opacity: 0 }}
@@ -45,19 +62,19 @@ const Contact = () => {
             <div className="grid grid-cols-2 gap-8">
               <ul className="space-y-4 font-body text-royal-blue">
                 <li>
-                  <Link to="#" className="hover:underline">
+                  <a href="#agenda" onClick={scrollToAgenda} className="hover:underline">
                     Agenda
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="#" className="hover:underline">
+                  <Link to={"/speakers"} className="hover:underline">
                     Speakers
                   </Link>
                 </li>
                 <li>
-                  <Link to="#" className="hover:underline">
+                  <a href="#register" onClick={scrollToRegister} className="hover:underline">
                     Register
-                  </Link>
+                  </a>
                 </li>
               </ul>
               <ul className="space-y-4 font-body text-royal-blue">

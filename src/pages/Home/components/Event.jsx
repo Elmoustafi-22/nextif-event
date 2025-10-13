@@ -33,7 +33,7 @@ const Event = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-        className="px-0 md:px-5 lg:px-30 grid grid-cols-1 gap-8 md:grid-cols-2 mt-6 md:mt-12"
+        className="px-0 md:px-5 lg:px-30 grid grid-cols-1 gap-8 mt-6 md:mt-12"
       >
         <motion.div
           variants={itemVariants}
@@ -43,13 +43,16 @@ const Event = () => {
             Speakers
           </h3>
           <div className="flex flex-row gap-4 md:gap-8">
-            <div className="bg-none md:bg-prussian-blue rounded-full w-10 md:w-14 lg:w-16 h-10 md:h-14 lg:h-16 flex justify-center items-center text-prussian-blue md:text-white text-xl md:text-2xl lg:text-3xl aspect-square">
+            <div className="bg-none md:bg-prussian-blue rounded-full w-10 md:w-14 lg:w-16 h-10 md:h-14 lg:h-16 flex justify-center items-center text-prussian-blue md:text-white text-3xl md:text-3xl lg:text-4xl aspect-square">
               <PiMicrophoneStage />
             </div>
             <p className="text-gray-800 text-lg font-body">
-              Hear from industry leaders in Islamic finance with decades of
-              combined experience building banks, funding startups, and
-              pioneering halal fintech solutions across Africa.
+              Gain invaluable insights from industry leaders in Islamic finance.
+              Our speakers bring decades of combined experience in building
+              Sharia-compliant organisations, funding groundbreaking startups, and
+              pioneering halal fintech solutions across Africa. Discover
+              innovative strategies and network with the pioneers shaping the
+              future of ethical finance.
             </p>
           </div>
           <div className="flex justify-between mt-4 md:mt-8">
@@ -64,32 +67,7 @@ const Event = () => {
             </Link>
           </div>
         </motion.div>
-        <div className="flex flex-col gap-6">
-          <motion.div
-            variants={itemVariants}
-            className="rounded-xl shadow flex flex-col gap-4 md:gap-8 justify-between shadow-blue-200 px-4 md:px-8 py-3 md:py-6 bg-royal-blue/20"
-          >
-            <h3 className="font-heading text-2xl md:text-4xl font-medium text-prussian-blue">
-              Develop Market Strategies
-            </h3>
-            <p className="text-gray-800 text-lg font-body">
-              Understand consumer behavior and market penetration tactics for
-              Islamic finance products
-            </p>
-          </motion.div>
-          <motion.div
-            variants={itemVariants}
-            className="rounded-xl shadow flex flex-col gap-4 md:gap-8 justify-between shadow-blue-200 px-4 md:px-8 py-3 md:py-6 bg-royal-blue/20"
-          >
-            <h3 className="font-heading text-2xl md:text-4xl font-medium text-prussian-blue">
-              Navigate Regulatory Frameworks
-            </h3>
-            <p className="text-gray-800 text-lg font-body">
-              Learn compliance requirements for Islamic financial products in
-              Nigeria and globally
-            </p>
-          </motion.div>
-        </div>
+        
       </motion.div>
     </motion.div>
   );
