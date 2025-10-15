@@ -111,22 +111,6 @@ const Partners = () => {
             >
               Partner with us
             </a>
-            <div className="flex flex-col gap-4 text-left">
-              <a
-                href="tel:+2348035462396"
-                className="flex items-center gap-3 text-prussian-blue hover:text-royal-blue"
-              >
-                <FiPhone />
-                <span>Founder: +234 803 546 2396</span>
-              </a>
-              <a
-                href="tel:+2348144232758"
-                className="flex items-center gap-3 text-prussian-blue hover:text-royal-blue"
-              >
-                <FiPhone />
-                <span>Co-Founder: +234 814 423 2758</span>
-              </a>
-            </div>
           </motion.div>
         </div>
       </motion.section>
