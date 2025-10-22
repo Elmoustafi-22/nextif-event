@@ -13,6 +13,14 @@ const Partners = () => {
       name: "IIIBF",
       logo: "/images/iiibf.webp",
     },
+    {
+      name: "Founders Friday",
+      logo: "/images/founders-friday.jpg"
+    },
+    {
+      name: "IFING MEDIA",
+      logo: "/images/ifing.png"
+    }
   ];
 
   const containerVariants = {
