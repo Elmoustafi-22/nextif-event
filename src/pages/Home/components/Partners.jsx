@@ -15,12 +15,20 @@ const Partners = () => {
     },
     {
       name: "Founders Friday",
-      logo: "/images/founders-friday.jpg"
+      logo: "/images/founders-friday.jpg",
     },
     {
       name: "IFING MEDIA",
-      logo: "/images/ifing.png"
-    }
+      logo: "/images/ifing.png",
+    },
+    {
+      name: "ABUMFLY",
+      logo: "/images/abumfly.jpg",
+    },
+    {
+      name: "MTECH",
+      logo: "/images/mtech.png",
+    },
   ];
 
   const containerVariants = {
@@ -58,7 +66,7 @@ const Partners = () => {
       >
         <div className="md:container mx-auto px-6 text-center">
           <h1 className="text-left text-prussian-blue text-3xl md:text-4xl lg:text-5xl font-heading font-bold tracking-tight">
-            Our Partners
+            Partners and Sponsors
           </h1>
           <motion.div
             variants={staggerContainer(0.3, 0.2)}
