@@ -82,7 +82,7 @@ const Partners = () => {
                   <img
                     src={partner.logo}
                     alt={partner.name}
-                    className="h-20 object-contain"
+                    className="h-40 w-40 object-contain"
                   />
                 </div>
               </motion.div>
