@@ -22,8 +22,8 @@ const Partners = () => {
       logo: "/images/ifing.png",
     },
     {
-      name: "ABUMFLY",
-      logo: "/images/abumfly.jpg",
+      name: "SHURIX",
+      logo: "/images/shurix.jpg",
     },
     {
       name: "MTECH",
