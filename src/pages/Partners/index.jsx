@@ -12,11 +12,46 @@ const PartnersPage = () => {
         "A company dedicated to fostering excellence in Sharia-compliant products, services, and processes. We aim to empower individuals and businesses by delivering tailored solutions grounded in Islamic principles.",
     },
     {
+      name: "CIBE",
+      location: "UAE",
+      logo: "/images/cibe.jpg",
+      description:
+        "Towards the pursuance of its key goal, to promote Islamic banking and finance all over the globe, AlHuda Centre of Islamic Banking and Economics is working diligently and under vigilance shariah compliant standards since its inception. AlHuda CIBE was established in 2005 and Mr. Zubair Mughal is its Chief Executive Officer. AlHuda CIBE has been accredited as a distinguished service provider due to our notable services, team of dedicated professionals and one stop solutions of Islamic banking and finance. Our aim is to provide state-of-the-art and science services of Islamic banking and finance worldwide. AlHuda head office is in UAE and regional offices are in Pakistan and in South Africa. AlHuda CIBE is omnipresent worldwide for its various services such as: advisory & consultancy, research & development, education & capacity building, Shariah advisory, publications & events, It is part of AlHuda CIBE commitment, to put the customer’s values foremost, hence providing them with Islamic Banking and Finance solution that is in line with their beliefs.",
+    },
+    {
+      name: "MTECH",
+      location: "Nigeria",
+      logo: "/images/mtech.png",
+      description:
+        "MTECH Noble Hub International Ltd is a technology-driven company dedicated to transforming the global halal economy through innovative, Shariah-compliant digital solutions. Our platforms empower businesses, professionals, and consumers by providing tools that foster business growth, ethical networking, halal trade, and financial inclusion. The global halal economy is valued at over $7 trillion, yet it lacks a centralized digital ecosystem that seamlessly connects halal businesses, certification bodies, and consumers. MTECH addresses this gap by developing AI-driven platforms and services that create trust, efficiency, and accessibility in the halal business ecosystem.",
+    },
+    {
       name: "IIIBF",
-      location: "Kano",
+      location: "Nigeria",
       logo: "/images/iiibf.webp",
       description:
         "The International Institute of Islamic Banking and Finance (IIIBF), Bayero University, Kano (BUK), Nigeria, is an exciting institution with a modest vibrant history and promising future, a wonderful place to learn and grow intellectually and academically through the Islamic teaching and principles. IIIBF possesses a wealth of academic experience combined with a great spirit and a commitment to excellence that clearly sets it apart from other institutes in Nigeria.",
+    },
+    {
+      name: "Shurix",
+      location: "UK",
+      logo: "/images/shurix.jpg",
+      description:
+        "At Shurix, we have the modern tools necessary to make managing Shariah compliance easier, more transparent, and built for scale, so ethical finance can have confidence in growth. Our aim is simple; ease the operational pain points businesses face, and give scholars, advisors, and institutions a smarter, digitally-supported way to work together. We believe the future of Islamic finance depends on systems that are not only trustworthy, but built for scale",
+    },
+    {
+      name: "IFING MEDIA",
+      location: "Nigeria",
+      logo: "/images/ifing.png",
+      description:
+        "IFING MEDIA was founded in 2018 with the mission to be a successful, creative and groundbreaking Islamic finance and halal industry (halal food, fashion, tourism & so on)  media company in Africa and beyond. Our raison d’être is to promote and advertise Islamic finance and halal industry products/services and to facilitate economic empowerment and activities inspired by Shariah principles. We are ideally positioned to leverage our core strengths and vast international relationship to make a difference. We identify market requirements for Islamic finance and halal industry products/services by promoting their development and delivery. Furthermore, we create vital linkages between the industry and the populace to promote the increase in economic activities in a socially responsible manner as a means to sustainable economic growth and development.",
+    },
+    {
+      name: "Founders Friday",
+      location: "Nigeria",
+      logo: "/images/founders-friday.jpg",
+      description:
+        "Founders Friday is a monthly founder and ecosystem meetup designed to build connections and visibility for startups and their solutions, as well as visibility for other ecosystem players. It is conducted in a casual environment to increase learning opportunities, build connections, and relax after a month of hard work.",
     },
   ];
 
@@ -96,9 +131,11 @@ const PartnersPage = () => {
                 )}
                 <div className="flex-grow">
                   {partner.description && (
-                    <p className="mt-4 text-md font-body text-gray-700 text-left">
-                      {partner.description}
-                    </p>
+                    <div className="mt-4 text-md font-body text-gray-700 text-left space-y-4">
+                      {partner.description.split('\n\n').map((paragraph, i) => (
+                        <p key={i}>{paragraph}</p>
+                      ))}
+                    </div>
                   )}
                 </div>
               </motion.div>

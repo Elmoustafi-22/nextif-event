@@ -6,6 +6,10 @@ import { FiPhone, FiMail } from 'react-icons/fi';
 const Partners = () => {
   const partners = [
     {
+      name: "CIBE",
+      logo: "/images/cibe.jpg",
+    },
+    {
       name: "Sharia Labs",
       logo: "/images/sharia-labs.webp",
     },
@@ -70,7 +74,7 @@ const Partners = () => {
           </h1>
           <motion.div
             variants={staggerContainer(0.3, 0.2)}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mt-10"
+            className="grid grid-cols-1 md:grid-cols-4 gap-8 items-center mt-10"
           >
             {partners.map((partner, index) => (
               <motion.div
