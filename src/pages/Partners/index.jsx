@@ -103,7 +103,7 @@ const PartnersPage = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.1 }}
         className="py-20"
       >
         <div className="container mx-auto px-6">
