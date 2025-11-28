@@ -15,7 +15,7 @@ const Partners = () => {
     },
     {
       name: "IIIBF",
-      logo: "/images/iiibf.webp",
+      logo: "/images/iiibf.jpeg",
     },
     {
       name: "Founders Friday",
@@ -32,6 +32,10 @@ const Partners = () => {
     {
       name: "MTECH",
       logo: "/images/mtech.png",
+    },
+    {
+      name: "SHAFANA",
+      logo: "/images/shafana.jpeg",
     },
   ];
 

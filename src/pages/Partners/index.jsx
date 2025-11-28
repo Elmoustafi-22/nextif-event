@@ -28,7 +28,7 @@ const PartnersPage = () => {
     {
       name: "IIIBF",
       location: "Nigeria",
-      logo: "/images/iiibf.webp",
+      logo: "/images/iiibf.jpeg",
       description:
         "The International Institute of Islamic Banking and Finance (IIIBF), Bayero University, Kano (BUK), Nigeria, is an exciting institution with a modest vibrant history and promising future, a wonderful place to learn and grow intellectually and academically through the Islamic teaching and principles. IIIBF possesses a wealth of academic experience combined with a great spirit and a commitment to excellence that clearly sets it apart from other institutes in Nigeria.",
     },
@@ -52,6 +52,13 @@ const PartnersPage = () => {
       logo: "/images/founders-friday.jpg",
       description:
         "Founders Friday is a monthly founder and ecosystem meetup designed to build connections and visibility for startups and their solutions, as well as visibility for other ecosystem players. It is conducted in a casual environment to increase learning opportunities, build connections, and relax after a month of hard work.",
+    },
+    {
+      name: "SHAFANA",
+      location: "Nigeria",
+      logo: "/images/shafana.jpeg",
+      description:
+        "SHAFANA Innovate Hub is social enterprise that operates a privately owned business incubation and acceleration programs for startups and entrepreneurs.  Our activities include professional & business advisory services (HRM, Marketing, Financial literacy, Access to Finance, Globalisation, Technical skills, Soft skills) and enterpreneurship (digital, youth, women, halal, ethical)  training to selected MSMEs sectors: education and green economy (Renewable energy, Green buSHAFANA Innovate Hub is social enterprise that operates a privately owned business incubation and acceleration programs for startups and entrepreneurs.  Our activities include professional & business advisory services (HRM, Marketing, Financial literacy, Access to Finance, Globalisation, Technical skills, Soft skills) and enterpreneurship (digital, youth, women, halal, ethical)  training to selected MSMEs sectors: education and green economy (Renewable energy, Green buildings, Sustainable transport, Water management, Waste management, Agriculture, Manufacturing, and Tourism). Our trainings focus on five pillars to micro and small enterprise sustainability: advocacy, innovation, networking, mentorship and collaboration.ildings, Sustainable transport, Water management, Waste management, Agriculture, Manufacturing, and Tourism). Our trainings focus on five pillars to micro and small enterprise sustainability: advocacy, innovation, networking, mentorship and collaboration.",
     },
   ];
 
