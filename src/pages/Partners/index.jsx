@@ -33,6 +33,12 @@ const PartnersPage = () => {
         "The International Institute of Islamic Banking and Finance (IIIBF), Bayero University, Kano (BUK), Nigeria, is an exciting institution with a modest vibrant history and promising future, a wonderful place to learn and grow intellectually and academically through the Islamic teaching and principles. IIIBF possesses a wealth of academic experience combined with a great spirit and a commitment to excellence that clearly sets it apart from other institutes in Nigeria.",
     },
     {
+      name: "Stecs",
+      location: "Nigeria",
+      logo: "/images/stecs.png",
+      description: "The Bank for an ethical lifestyle. We all deserve a simplified, yet innovative banking experience. Stecs.ng is a non-interest digital bank that lets you manage all your finances in an ethical manner and in just one app. Swift account opening process, money management tools and card services are some of the things you stand to gain when you open an account with us. When you think of innovative, simplified and transparent banking experience, think STECS.NG"
+    },
+    {
       name: "Shurix",
       location: "UK",
       logo: "/images/shurix.jpg",

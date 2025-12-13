@@ -22,6 +22,10 @@ const Partners = () => {
       logo: "/images/founders-friday.jpg",
     },
     {
+      name: "Stecs",
+      logo: "/images/stecs.png",
+    },
+    {
       name: "IFING MEDIA",
       logo: "/images/ifing.png",
     },
