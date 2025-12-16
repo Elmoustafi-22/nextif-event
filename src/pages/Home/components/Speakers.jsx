@@ -7,7 +7,7 @@ const Speakers = () => {
   const speakers = [
     {
       name: "Prof. Usman Shuaib Zunnurain",
-      title: "Director, IIIBF. Member,CBN-FRACE",
+      title: "Director, IIIBF, BUK. Member, CBN-FRACE",
     },
 
     {
