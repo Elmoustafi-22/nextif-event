@@ -12,7 +12,7 @@ const Speakers = () => {
 
     {
       name: " Mr. Mudathir Adesanya",
-      title: "Founder, M-tech Noble Hub and MD IFING",
+      title: "Founder, M-tech Noble Hub and MD IFING MEDIA Ltd.",
     },
     {
       name: "Assoc Prof. Shukurat Bello (CSAA)",
