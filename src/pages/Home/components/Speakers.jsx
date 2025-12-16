@@ -12,12 +12,12 @@ const Speakers = () => {
 
     {
       name: " Mr. Mudathir Adesanya",
-      title: "Founder, M-tech Noble Hub and MD IFING MEDIA Ltd.",
+      title: "Founder, M-tech Noble Hub | MD IFING Media Ltd.",
     },
     {
       name: "Assoc Prof. Shukurat Bello (CSAA)",
       title:
-        "Team Lead, Shafana Innovate Hub and the CEO/Founder of Spak Innovation Hub.",
+        "Team Lead, Shafana Innovate Hub | CEO/Founder, Spak Innovation Hub.",
     },
     {
       name: "Mrs. Shakirat Animashaun",

@@ -26,14 +26,14 @@ const Partners = () => {
       type: "partner",
     },
     {
-      name: "Stecs",
-      logo: "/images/stecs.png",
+      name: "MTECH",
+      logo: "/images/mtech.png",
       type: "sponsor",
     },
     {
-      name: "IFING MEDIA",
-      logo: "/images/ifing.png",
-      type: "partner",
+      name: "Stecs",
+      logo: "/images/stecs.png",
+      type: "sponsor",
     },
     {
       name: "SHURIX",
@@ -41,9 +41,9 @@ const Partners = () => {
       type: "sponsor",
     },
     {
-      name: "MTECH",
-      logo: "/images/mtech.png",
-      type: "sponsor",
+      name: "IFING MEDIA",
+      logo: "/images/ifing.png",
+      type: "partner",
     },
     {
       name: "SHAFANA",

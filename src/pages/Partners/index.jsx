@@ -37,13 +37,6 @@ const PartnersPage = () => {
       type: "partner",
     },
     {
-      name: "Stecs",
-      location: "Nigeria",
-      logo: "/images/stecs.png",
-      description: "The Bank for an ethical lifestyle. We all deserve a simplified, yet innovative banking experience. Stecs.ng is a non-interest digital bank that lets you manage all your finances in an ethical manner and in just one app. Swift account opening process, money management tools and card services are some of the things you stand to gain when you open an account with us. When you think of innovative, simplified and transparent banking experience, think STECS.NG",
-      type: "sponsor",
-    },
-    {
       name: "Shurix",
       location: "UK",
       logo: "/images/shurix.jpg",
@@ -51,6 +44,15 @@ const PartnersPage = () => {
         "At Shurix, we have the modern tools necessary to make managing Shariah compliance easier, more transparent, and built for scale, so ethical finance can have confidence in growth. Our aim is simple; ease the operational pain points businesses face, and give scholars, advisors, and institutions a smarter, digitally-supported way to work together. We believe the future of Islamic finance depends on systems that are not only trustworthy, but built for scale",
       type: "sponsor",
     },
+    {
+      name: "Stecs",
+      location: "Nigeria",
+      logo: "/images/stecs.png",
+      description:
+        "The Bank for an ethical lifestyle. We all deserve a simplified, yet innovative banking experience. Stecs.ng is a non-interest digital bank that lets you manage all your finances in an ethical manner and in just one app. Swift account opening process, money management tools and card services are some of the things you stand to gain when you open an account with us. When you think of innovative, simplified and transparent banking experience, think STECS.NG",
+      type: "sponsor",
+    },
+
     {
       name: "IFING MEDIA",
       location: "Nigeria",
