@@ -33,11 +33,12 @@ const SpeakersPage = () => {
     },
 
     {
-      name: "Mrs. Shakirat Animashaun",
-      title: "Founder, Enricher FinTech",
-      bio: "She is Shakirat Animashaun, the Founder/CEO of Enricher Fintech, a platform for fundraising and investments, which are fundamental to the success of every business. In her over 20 years of entrepreneurial experience in the tech arena, Shakirat has worked with Flyingdove Institute of Information Technology, an edtech company where over 5,000 youths have been trained in both soft and hardware engineering, system security computer networking, etc.",
+      name: "Musab Abbas Sani",
+      title:
+        "Nigerian technologist, fintech innovator | CEO of AUA Technologies, Ltd.",
+      bio: "Musab Abbas Sani is a Nigerian technologist, fintech innovator, and CEO of AUA Technologies Ltd. With advanced expertise in Information Technology, ongoing PhD research in Quantum Cybersecurity, and strong experience in digital finance, he builds solutions at the intersection of technology and ethical innovation. He holds certificates in Islamic Finance for the Sustainable Development Goals (IRTIx) as well as Islamic Finance & Capital Markets, Islamic Money Market, and Sukuk, and Diploma in Islamic and Sharia Law, strengthening his work in ethical and Shariah-compliant fintech. Musab has trained thousands across Africa including on World Bank supported programs and led the development of AI-driven financial tools such as FXLens. His mission is to integrate faith and technology by promoting transparent, inclusive, and Shariah-aligned digital solutions for the next generation of innovators.",
       topics: [
-        "Fundraising & Investments",
+        "AI-driven Financial Tools",
         "Fintech Solutions",
         "Tech Education",
       ],
@@ -108,10 +109,10 @@ const SpeakersPage = () => {
                 <h3 className="text-2xl font-heading text-gray-50 font-semibold">
                   {speaker.name}
                 </h3>
-                <p className="text-lg font-body text-gray-300 mt-2">
+                <p className="text-lg font-body text-gray-200 mt-2">
                   {speaker.title}
                 </p>
-                <div className="text-md font-body text-gray-400 mt-4">
+                <div className="text-md font-body text-gray-300 mt-4">
                   {speaker.bio.split('. ').reduce((result, sentence, i, array) => {
                     // Group sentences into 3-4 paragraphs
                     const totalSentences = array.length;

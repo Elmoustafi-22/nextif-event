@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { PiArrowUpRight } from 'react-icons/pi';
+import { PiArrowUpRight } from "react-icons/pi";
 import { motion } from "framer-motion";
 
 const Speakers = () => {
@@ -9,7 +9,6 @@ const Speakers = () => {
       name: "Prof. Usman Shuaib Zunnurain",
       title: "Director, IIIBF, BUK. Member, CBN-FRACE",
     },
-
     {
       name: " Mr. Mudathir Adesanya",
       title: "Founder, M-tech Noble Hub | MD IFING Media Ltd.",
@@ -20,8 +19,9 @@ const Speakers = () => {
         "Team Lead, Shafana Innovate Hub | CEO/Founder, Spak Innovation Hub.",
     },
     {
-      name: "Mrs. Shakirat Animashaun",
-      title: "Founder, Enricher FinTech",
+      name: "Musab Abbas Sani",
+      title:
+        "Nigerian technologist, fintech innovator | CEO of AUA Technologies, Ltd.",
     },
     {
       name: "Mr. Abubakar Abbagana",
@@ -85,7 +85,10 @@ const Speakers = () => {
           ))}
         </motion.div>
         <div className="inline-block mt-8 px-0 md:px-5 lg:px-30">
-          <Link to="/speakers" className="flex gap-2 whitespace-nowrap font-body bg-prussian-blue border-0 shadow-sm px-6 py-3 text-white text-xl rounded-full items-center">
+          <Link
+            to="/speakers"
+            className="flex gap-2 whitespace-nowrap font-body bg-prussian-blue border-0 shadow-sm px-6 py-3 text-white text-xl rounded-full items-center"
+          >
             And more <PiArrowUpRight />{" "}
           </Link>
         </div>
